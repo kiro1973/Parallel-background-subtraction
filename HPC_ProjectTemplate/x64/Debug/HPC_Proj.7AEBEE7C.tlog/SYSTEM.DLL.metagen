@@ -1,0 +1,2240 @@
+  System.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly System, Version=5.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=5.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e: 
+	hash=None, flags=None
+Class System.Text.RegularExpressions.Regex: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Text.RegularExpressions.RegexOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Text.RegularExpressions.RegexRunnerFactory factory : Assembly
+    System.TimeSpan internalMatchTimeout : Assembly
+    System.Collections.Generic.Dictionary`2[System.Int32,System.Int32] caps : Assembly
+    System.Collections.Generic.Dictionary`2[System.String,System.Int32] capnames : Assembly
+    System.Text.RegularExpressions.ExclusiveReference runnerref : Assembly
+    System.Text.RegularExpressions.SharedReference replref : Assembly
+    System.Text.RegularExpressions.RegexCode code : Assembly
+    Boolean refsInitialized : Assembly
+    System.TimeSpan InfiniteMatchTimeout : Assembly, Static, InitOnly
+    System.TimeSpan FallbackDefaultMatchTimeout : Assembly, Static, InitOnly
+    System.TimeSpan DefaultMatchTimeout : Assembly, Static, InitOnly
+    System.Collections.Generic.LinkedList`1[System.Text.RegularExpressions.CachedCodeEntry] livecode : Assembly, Static
+    Int32 cacheSize : Assembly, Static
+    Int32 MaxOptionShift = 10 : Assembly, Static, Literal, HasDefault
+  Properties:
+    Int32 CacheSize 'get set' : 
+    System.Text.RegularExpressions.RegexOptions Options 'get ' : 
+    System.TimeSpan MatchTimeout 'get ' : 
+    Boolean RightToLeft 'get ' : 
+  Methods:
+    ValidateMatchTimeout(TimeSpan): PrivateScope, Assembly, Static, HideBySig
+    Escape(String): PrivateScope, Public, Static, HideBySig
+    Unescape(String): PrivateScope, Public, Static, HideBySig
+    get_CacheSize(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_CacheSize(Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Options(): PrivateScope, Public, HideBySig, SpecialName
+    get_MatchTimeout(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_RightToLeft(): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    GetGroupNames(): PrivateScope, Public, HideBySig
+    GetGroupNumbers(): PrivateScope, Public, HideBySig
+    GroupNameFromNumber(Int32): PrivateScope, Public, HideBySig
+    GroupNumberFromName(String): PrivateScope, Public, HideBySig
+    IsMatch(String, String): PrivateScope, Public, Static, HideBySig
+    IsMatch(String, String, RegexOptions): PrivateScope, Public, Static, HideBySig
+    IsMatch(String): PrivateScope, Public, HideBySig
+    IsMatch(String, Int32): PrivateScope, Public, HideBySig
+    Match(String, String): PrivateScope, Public, Static, HideBySig
+    Match(String, String, RegexOptions): PrivateScope, Public, Static, HideBySig
+    Match(String): PrivateScope, Public, HideBySig
+    Match(String, Int32): PrivateScope, Public, HideBySig
+    Match(String, Int32, Int32): PrivateScope, Public, HideBySig
+    Matches(String, String): PrivateScope, Public, Static, HideBySig
+    Matches(String, String, RegexOptions): PrivateScope, Public, Static, HideBySig
+    Matches(String): PrivateScope, Public, HideBySig
+    Matches(String, Int32): PrivateScope, Public, HideBySig
+    Replace(String, String, String): PrivateScope, Public, Static, HideBySig
+    Replace(String, String, String, RegexOptions): PrivateScope, Public, Static, HideBySig
+    Replace(String, String): PrivateScope, Public, HideBySig
+    Replace(String, String, Int32): PrivateScope, Public, HideBySig
+    Replace(String, String, Int32, Int32): PrivateScope, Public, HideBySig
+    Replace(String, String, MatchEvaluator): PrivateScope, Public, Static, HideBySig
+    Replace(String, String, MatchEvaluator, RegexOptions): PrivateScope, Public, Static, HideBySig
+    Replace(String, MatchEvaluator): PrivateScope, Public, HideBySig
+    Replace(String, MatchEvaluator, Int32): PrivateScope, Public, HideBySig
+    Replace(String, MatchEvaluator, Int32, Int32): PrivateScope, Public, HideBySig
+    Split(String, String): PrivateScope, Public, Static, HideBySig
+    Split(String, String, RegexOptions): PrivateScope, Public, Static, HideBySig
+    Split(String): PrivateScope, Public, HideBySig
+    Split(String, Int32): PrivateScope, Public, HideBySig
+    Split(String, Int32, Int32): PrivateScope, Public, HideBySig
+    Run(Boolean, Int32, String, Int32, Int32, Int32): PrivateScope, Assembly, HideBySig
+    UseOptionInvariant(): PrivateScope, Assembly, HideBySig
+Class System.Text.RegularExpressions.MatchEvaluator: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Match): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Match, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class System.Text.RegularExpressions.CachedCodeEntry: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+    Void .ctor(System.String, System.Collections.Generic.Dictionary`2[System.String,System.Int32], System.String[], System.Text.RegularExpressions.RegexCode, System.Collections.Generic.Dictionary`2[System.Int32,System.Int32], Int32, System.Text.RegularExpressions.ExclusiveReference, System.Text.RegularExpressions.SharedReference): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String _key : Assembly
+    System.Text.RegularExpressions.RegexCode _code : Assembly
+    System.Collections.Generic.Dictionary`2[System.Int32,System.Int32] _caps : Assembly
+    System.Collections.Generic.Dictionary`2[System.String,System.Int32] _capnames : Assembly
+    System.String[] _capslist : Assembly
+    Int32 _capsize : Assembly
+    System.Text.RegularExpressions.RegexRunnerFactory _factory : Assembly
+    System.Text.RegularExpressions.ExclusiveReference _runnerref : Assembly
+    System.Text.RegularExpressions.SharedReference _replref : Assembly
+Class System.Text.RegularExpressions.ExclusiveReference: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Get(): PrivateScope, Assembly, HideBySig
+    Release(Object): PrivateScope, Assembly, HideBySig
+Class System.Text.RegularExpressions.SharedReference: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Get(): PrivateScope, Assembly, HideBySig
+    Cache(Object): PrivateScope, Assembly, HideBySig
+Class System.Text.RegularExpressions.RegexBoyerMoore: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+    Void .ctor(System.String, Boolean, Boolean, System.Globalization.CultureInfo): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32[] _positive : Assembly
+    Int32[] _negativeASCII : Assembly
+    Int32[][] _negativeUnicode : Assembly
+    System.String _pattern : Assembly
+    Int32 _lowASCII : Assembly
+    Int32 _highASCII : Assembly
+    Boolean _rightToLeft : Assembly
+    Boolean _caseInsensitive : Assembly
+    System.Globalization.CultureInfo _culture : Assembly
+    Int32 infinite = 2147483647 : Assembly, Static, Literal, HasDefault
+  Methods:
+    IsMatch(String, Int32, Int32, Int32): PrivateScope, Assembly, HideBySig
+    Scan(String, Int32, Int32, Int32): PrivateScope, Assembly, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.Text.RegularExpressions.Capture: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, Int32, Int32): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String _text : Assembly
+    Int32 _index : Assembly
+    Int32 _length : Assembly
+  Properties:
+    Int32 Index 'get ' : 
+    Int32 Length 'get ' : 
+    System.String Value 'get ' : 
+  Methods:
+    get_Index(): PrivateScope, Public, HideBySig, SpecialName
+    get_Length(): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    GetOriginalString(): PrivateScope, Assembly, HideBySig
+    GetLeftSubstring(): PrivateScope, Assembly, HideBySig
+    GetRightSubstring(): PrivateScope, Assembly, HideBySig
+Class System.Text.RegularExpressions.CaptureCollection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Text.RegularExpressions.Group): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.ICollection
+    System.Collections.IEnumerable
+  Fields:
+    System.Text.RegularExpressions.Group _group : Assembly
+    Int32 _capcount : Assembly
+    System.Text.RegularExpressions.Capture[] _captures : Assembly
+  Properties:
+    System.Object SyncRoot 'get ' : 
+    Boolean IsSynchronized 'get ' : 
+    Boolean IsReadOnly 'get ' : 
+    Int32 Count 'get ' : 
+    System.Text.RegularExpressions.Capture Item [Int32] 'get ' : 
+  Methods:
+    get_SyncRoot(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsSynchronized(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsReadOnly(): PrivateScope, Public, HideBySig, SpecialName
+    get_Count(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    CopyTo(Array, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetCapture(Int32): PrivateScope, Assembly, HideBySig
+Class System.Text.RegularExpressions.CaptureEnumerator: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Text.RegularExpressions.CaptureCollection): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.IEnumerator
+  Fields:
+    System.Text.RegularExpressions.CaptureCollection _rcc : Assembly
+    Int32 _curindex : Assembly
+  Properties:
+    System.Object Current 'get ' : 
+    System.Text.RegularExpressions.Capture Capture 'get ' : 
+  Methods:
+    MoveNext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Current(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Capture(): PrivateScope, Public, HideBySig, SpecialName
+    Reset(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Text.RegularExpressions.RegexCharClass: AutoLayout, AnsiClass, Class, Sealed
+    Void .ctor(): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String SpaceClass : Assembly, Static, InitOnly
+    System.String NotSpaceClass : Assembly, Static, InitOnly
+    System.String WordClass : Assembly, Static, InitOnly
+    System.String NotWordClass : Assembly, Static, InitOnly
+    System.String DigitClass : Assembly, Static, InitOnly
+    System.String NotDigitClass : Assembly, Static, InitOnly
+    System.String ECMASpaceClass =   	 ! : Assembly, Static, Literal, HasDefault
+    System.String NotECMASpaceClass =  	 ! : Assembly, Static, Literal, HasDefault
+    System.String ECMAWordClass =  
+ 0:A[_`a{İı : Assembly, Static, Literal, HasDefault
+    System.String NotECMAWordClass = 
+ 0:A[_`a{İı : Assembly, Static, Literal, HasDefault
+    System.String ECMADigitClass =   0: : Assembly, Static, Literal, HasDefault
+    System.String NotECMADigitClass =  0: : Assembly, Static, Literal, HasDefault
+    System.String AnyClass =     : Assembly, Static, Literal, HasDefault
+    System.String EmptyClass =     : Assembly, Static, Literal, HasDefault
+  Properties:
+    Boolean CanMerge 'get ' : 
+    Boolean Negate 'set' : 
+  Methods:
+    get_CanMerge(): PrivateScope, Assembly, HideBySig, SpecialName
+    set_Negate(Boolean): PrivateScope, Assembly, HideBySig, SpecialName
+    AddChar(Char): PrivateScope, Assembly, HideBySig
+    AddCharClass(RegexCharClass): PrivateScope, Assembly, HideBySig
+    AddSubtraction(RegexCharClass): PrivateScope, Assembly, HideBySig
+    AddRange(Char, Char): PrivateScope, Assembly, HideBySig
+    AddCategoryFromName(String, Boolean, Boolean, String): PrivateScope, Assembly, HideBySig
+    AddLowercase(CultureInfo): PrivateScope, Assembly, HideBySig
+    AddWord(Boolean, Boolean): PrivateScope, Assembly, HideBySig
+    AddSpace(Boolean, Boolean): PrivateScope, Assembly, HideBySig
+    AddDigit(Boolean, Boolean, String): PrivateScope, Assembly, HideBySig
+    ConvertOldStringsToClass(String, String): PrivateScope, Assembly, Static, HideBySig
+    SingletonChar(String): PrivateScope, Assembly, Static, HideBySig
+    IsMergeable(String): PrivateScope, Assembly, Static, HideBySig
+    IsEmpty(String): PrivateScope, Assembly, Static, HideBySig
+    IsSingleton(String): PrivateScope, Assembly, Static, HideBySig
+    IsSingletonInverse(String): PrivateScope, Assembly, Static, HideBySig
+    IsNegated(String): PrivateScope, Assembly, Static, HideBySig
+    IsECMAWordChar(Char): PrivateScope, Assembly, Static, HideBySig
+    IsWordChar(Char): PrivateScope, Assembly, Static, HideBySig
+    CharInClass(Char, String): PrivateScope, Assembly, Static, HideBySig
+    CharInClassRecursive(Char, String, Int32): PrivateScope, Assembly, Static, HideBySig
+    Parse(String): PrivateScope, Assembly, Static, HideBySig
+    ToStringClass(): PrivateScope, Assembly, HideBySig
+Class System.Text.RegularExpressions.RegexCode: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+    Void .ctor(Int32[], System.Collections.Generic.List`1[System.String], Int32, System.Collections.Generic.Dictionary`2[System.Int32,System.Int32], Int32, System.Text.RegularExpressions.RegexBoyerMoore, System.Text.RegularExpressions.RegexPrefix, Int32, Boolean): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32[] _codes : Assembly
+    System.String[] _strings : Assembly
+    Int32 _trackcount : Assembly
+    System.Collections.Generic.Dictionary`2[System.Int32,System.Int32] _caps : Assembly
+    Int32 _capsize : Assembly
+    System.Text.RegularExpressions.RegexPrefix _fcPrefix : Assembly
+    System.Text.RegularExpressions.RegexBoyerMoore _bmPrefix : Assembly
+    Int32 _anchors : Assembly
+    Boolean _rightToLeft : Assembly
+    Int32 Onerep = 0 : Assembly, Static, Literal, HasDefault
+    Int32 Notonerep = 1 : Assembly, Static, Literal, HasDefault
+    Int32 Setrep = 2 : Assembly, Static, Literal, HasDefault
+    Int32 Oneloop = 3 : Assembly, Static, Literal, HasDefault
+    Int32 Notoneloop = 4 : Assembly, Static, Literal, HasDefault
+    Int32 Setloop = 5 : Assembly, Static, Literal, HasDefault
+    Int32 Onelazy = 6 : Assembly, Static, Literal, HasDefault
+    Int32 Notonelazy = 7 : Assembly, Static, Literal, HasDefault
+    Int32 Setlazy = 8 : Assembly, Static, Literal, HasDefault
+    Int32 One = 9 : Assembly, Static, Literal, HasDefault
+    Int32 Notone = 10 : Assembly, Static, Literal, HasDefault
+    Int32 Set = 11 : Assembly, Static, Literal, HasDefault
+    Int32 Multi = 12 : Assembly, Static, Literal, HasDefault
+    Int32 Ref = 13 : Assembly, Static, Literal, HasDefault
+    Int32 Bol = 14 : Assembly, Static, Literal, HasDefault
+    Int32 Eol = 15 : Assembly, Static, Literal, HasDefault
+    Int32 Boundary = 16 : Assembly, Static, Literal, HasDefault
+    Int32 Nonboundary = 17 : Assembly, Static, Literal, HasDefault
+    Int32 Beginning = 18 : Assembly, Static, Literal, HasDefault
+    Int32 Start = 19 : Assembly, Static, Literal, HasDefault
+    Int32 EndZ = 20 : Assembly, Static, Literal, HasDefault
+    Int32 End = 21 : Assembly, Static, Literal, HasDefault
+    Int32 Nothing = 22 : Assembly, Static, Literal, HasDefault
+    Int32 Lazybranch = 23 : Assembly, Static, Literal, HasDefault
+    Int32 Branchmark = 24 : Assembly, Static, Literal, HasDefault
+    Int32 Lazybranchmark = 25 : Assembly, Static, Literal, HasDefault
+    Int32 Nullcount = 26 : Assembly, Static, Literal, HasDefault
+    Int32 Setcount = 27 : Assembly, Static, Literal, HasDefault
+    Int32 Branchcount = 28 : Assembly, Static, Literal, HasDefault
+    Int32 Lazybranchcount = 29 : Assembly, Static, Literal, HasDefault
+    Int32 Nullmark = 30 : Assembly, Static, Literal, HasDefault
+    Int32 Setmark = 31 : Assembly, Static, Literal, HasDefault
+    Int32 Capturemark = 32 : Assembly, Static, Literal, HasDefault
+    Int32 Getmark = 33 : Assembly, Static, Literal, HasDefault
+    Int32 Setjump = 34 : Assembly, Static, Literal, HasDefault
+    Int32 Backjump = 35 : Assembly, Static, Literal, HasDefault
+    Int32 Forejump = 36 : Assembly, Static, Literal, HasDefault
+    Int32 Testref = 37 : Assembly, Static, Literal, HasDefault
+    Int32 Goto = 38 : Assembly, Static, Literal, HasDefault
+    Int32 Prune = 39 : Assembly, Static, Literal, HasDefault
+    Int32 Stop = 40 : Assembly, Static, Literal, HasDefault
+    Int32 ECMABoundary = 41 : Assembly, Static, Literal, HasDefault
+    Int32 NonECMABoundary = 42 : Assembly, Static, Literal, HasDefault
+    Int32 Mask = 63 : Assembly, Static, Literal, HasDefault
+    Int32 Rtl = 64 : Assembly, Static, Literal, HasDefault
+    Int32 Back = 128 : Assembly, Static, Literal, HasDefault
+    Int32 Back2 = 256 : Assembly, Static, Literal, HasDefault
+    Int32 Ci = 512 : Assembly, Static, Literal, HasDefault
+  Methods:
+    OpcodeBacktracks(Int32): PrivateScope, Assembly, Static, HideBySig
+    OpcodeSize(Int32): PrivateScope, Assembly, Static, HideBySig
+    MakeException(String): PrivateScope, Assembly, Static, HideBySig
+Class System.Text.RegularExpressions.RegexFCD: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Beginning = 1 : Assembly, Static, Literal, HasDefault
+    Int32 Bol = 2 : Assembly, Static, Literal, HasDefault
+    Int32 Start = 4 : Assembly, Static, Literal, HasDefault
+    Int32 Eol = 8 : Assembly, Static, Literal, HasDefault
+    Int32 EndZ = 16 : Assembly, Static, Literal, HasDefault
+    Int32 End = 32 : Assembly, Static, Literal, HasDefault
+    Int32 Boundary = 64 : Assembly, Static, Literal, HasDefault
+    Int32 ECMABoundary = 128 : Assembly, Static, Literal, HasDefault
+  Methods:
+    FirstChars(RegexTree): PrivateScope, Assembly, Static, HideBySig
+    Prefix(RegexTree): PrivateScope, Assembly, Static, HideBySig
+    Anchors(RegexTree): PrivateScope, Assembly, Static, HideBySig
+Class System.Text.RegularExpressions.RegexFC: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+    Void .ctor(Boolean): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Char, Boolean, Boolean, Boolean): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Boolean, Boolean): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Text.RegularExpressions.RegexCharClass _cc : Assembly
+    Boolean _nullable : Assembly
+    Boolean _caseInsensitive : Assembly
+  Methods:
+    AddFC(RegexFC, Boolean): PrivateScope, Assembly, HideBySig
+    GetFirstChars(CultureInfo): PrivateScope, Assembly, HideBySig
+    IsCaseInsensitive(): PrivateScope, Assembly, HideBySig
+Class System.Text.RegularExpressions.RegexPrefix: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+    Void .ctor(System.String, Boolean): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String _prefix : Assembly
+    Boolean _caseInsensitive : Assembly
+    System.Text.RegularExpressions.RegexPrefix _empty : Assembly, Static
+  Properties:
+    System.String Prefix 'get ' : 
+    Boolean CaseInsensitive 'get ' : 
+    System.Text.RegularExpressions.RegexPrefix Empty 'get ' : 
+  Methods:
+    get_Prefix(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_CaseInsensitive(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Empty(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+Class System.Text.RegularExpressions.Group: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Text.RegularExpressions.Capture
+    Void .ctor(System.String, Int32[], Int32): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32[] _caps : Assembly
+    Int32 _capcount : Assembly
+    System.Text.RegularExpressions.CaptureCollection _capcoll : Assembly
+    System.Text.RegularExpressions.Group _emptygroup : Assembly, Static
+  Properties:
+    Boolean Success 'get ' : 
+    System.Text.RegularExpressions.CaptureCollection Captures 'get ' : 
+  Methods:
+    get_Success(): PrivateScope, Public, HideBySig, SpecialName
+    get_Captures(): PrivateScope, Public, HideBySig, SpecialName
+    Synchronized(Group): PrivateScope, Assembly, Static, HideBySig
+Class System.Text.RegularExpressions.GroupCollection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Text.RegularExpressions.Match, System.Collections.Generic.Dictionary`2[System.Int32,System.Int32]): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.ICollection
+    System.Collections.IEnumerable
+  Fields:
+    System.Text.RegularExpressions.Match _match : Assembly
+    System.Collections.Generic.Dictionary`2[System.Int32,System.Int32] _captureMap : Assembly
+    System.Text.RegularExpressions.Group[] _groups : Assembly
+  Properties:
+    System.Object SyncRoot 'get ' : 
+    Boolean IsSynchronized 'get ' : 
+    Boolean IsReadOnly 'get ' : 
+    Int32 Count 'get ' : 
+    System.Text.RegularExpressions.Group Item [Int32] 'get ' : 
+    System.Text.RegularExpressions.Group Item [System.String] 'get ' : 
+  Methods:
+    get_SyncRoot(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsSynchronized(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsReadOnly(): PrivateScope, Public, HideBySig, SpecialName
+    get_Count(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(String): PrivateScope, Public, HideBySig, SpecialName
+    GetGroup(Int32): PrivateScope, Assembly, HideBySig
+    GetGroupImpl(Int32): PrivateScope, Assembly, HideBySig
+    CopyTo(Array, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Text.RegularExpressions.GroupEnumerator: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Text.RegularExpressions.GroupCollection): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.IEnumerator
+  Fields:
+    System.Text.RegularExpressions.GroupCollection _rgc : Assembly
+    Int32 _curindex : Assembly
+  Properties:
+    System.Object Current 'get ' : 
+    System.Text.RegularExpressions.Capture Capture 'get ' : 
+  Methods:
+    MoveNext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Current(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Capture(): PrivateScope, Public, HideBySig, SpecialName
+    Reset(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Text.RegularExpressions.RegexRunner: AutoLayout, AnsiClass, Class, Abstract, BeforeFieldInit
+  Methods:
+    Scan(Regex, String, Int32, Int32, Int32, Int32, Boolean, TimeSpan): PrivateScope, Assembly, HideBySig
+    CheckTimeout(): PrivateScope, Assembly, HideBySig
+Class System.Text.RegularExpressions.RegexInterpreter: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  :System.Text.RegularExpressions.RegexRunner
+    Void .ctor(System.Text.RegularExpressions.RegexCode, System.Globalization.CultureInfo): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 runoperator : Assembly
+    Int32[] runcodes : Assembly
+    Int32 runcodepos : Assembly
+    System.String[] runstrings : Assembly
+    System.Text.RegularExpressions.RegexCode runcode : Assembly
+    System.Text.RegularExpressions.RegexPrefix runfcPrefix : Assembly
+    System.Text.RegularExpressions.RegexBoyerMoore runbmPrefix : Assembly
+    Int32 runanchors : Assembly
+    Boolean runrtl : Assembly
+    Boolean runci : Assembly
+    System.Globalization.CultureInfo runculture : Assembly
+Class System.Text.RegularExpressions.Match: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Text.RegularExpressions.Group
+    Void .ctor(System.Text.RegularExpressions.Regex, Int32, System.String, Int32, Int32, Int32): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Text.RegularExpressions.GroupCollection _groupcoll : Assembly
+    System.Text.RegularExpressions.Regex _regex : Assembly
+    Int32 _textbeg : Assembly
+    Int32 _textpos : Assembly
+    Int32 _textend : Assembly
+    Int32 _textstart : Assembly
+    Int32[][] _matches : Assembly
+    Int32[] _matchcount : Assembly
+    Boolean _balancing : Assembly
+    System.Text.RegularExpressions.Match _empty : Assembly, Static
+  Properties:
+    System.Text.RegularExpressions.Match Empty 'get ' : 
+    System.Text.RegularExpressions.GroupCollection Groups 'get ' : 
+  Methods:
+    get_Empty(): PrivateScope, Public, Static, HideBySig, SpecialName
+    Reset(Regex, String, Int32, Int32, Int32): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    get_Groups(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    NextMatch(): PrivateScope, Public, HideBySig
+    Result(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GroupToStringImpl(Int32): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    LastGroupToStringImpl(): PrivateScope, Assembly, HideBySig
+    Synchronized(Match): PrivateScope, Assembly, Static, HideBySig
+    AddMatch(Int32, Int32, Int32): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    BalanceMatch(Int32): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    RemoveMatch(Int32): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    IsMatched(Int32): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    MatchIndex(Int32): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    MatchLength(Int32): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+    Tidy(Int32): PrivateScope, Assembly, Virtual, HideBySig, VtableLayoutMask, CheckAccessOnOverride
+Class System.Text.RegularExpressions.MatchSparse: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.Text.RegularExpressions.Match
+    Void .ctor(System.Text.RegularExpressions.Regex, System.Collections.Generic.Dictionary`2[System.Int32,System.Int32], Int32, System.String, Int32, Int32, Int32): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Collections.Generic.Dictionary`2[System.Int32,System.Int32] _caps : Assembly
+  Properties:
+    System.Text.RegularExpressions.GroupCollection Groups 'get ' : 
+  Methods:
+    get_Groups(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class System.Text.RegularExpressions.MatchCollection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Text.RegularExpressions.Regex, System.String, Int32, Int32, Int32): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.ICollection
+    System.Collections.IEnumerable
+  Fields:
+    System.Text.RegularExpressions.Regex _regex : Assembly
+    System.Collections.Generic.List`1[System.Text.RegularExpressions.Match] _matches : Assembly
+    Boolean _done : Assembly
+    System.String _input : Assembly
+    Int32 _beginning : Assembly
+    Int32 _length : Assembly
+    Int32 _startat : Assembly
+    Int32 _prevlen : Assembly
+  Properties:
+    Int32 Count 'get ' : 
+    System.Object SyncRoot 'get ' : 
+    Boolean IsSynchronized 'get ' : 
+    Boolean IsReadOnly 'get ' : 
+    System.Text.RegularExpressions.Match Item [Int32] 'get ' : 
+  Methods:
+    GetMatch(Int32): PrivateScope, Assembly, HideBySig
+    get_Count(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SyncRoot(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsSynchronized(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsReadOnly(): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    CopyTo(Array, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Text.RegularExpressions.MatchEnumerator: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.Text.RegularExpressions.MatchCollection): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.IEnumerator
+  Fields:
+    System.Text.RegularExpressions.MatchCollection _matchcoll : Assembly
+    System.Text.RegularExpressions.Match _match : Assembly
+    Int32 _curindex : Assembly
+    Boolean _done : Assembly
+  Properties:
+    System.Object Current 'get ' : 
+  Methods:
+    MoveNext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Current(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Reset(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Text.RegularExpressions.RegexNode: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+    Void .ctor(Int32, System.Text.RegularExpressions.RegexOptions): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, System.Text.RegularExpressions.RegexOptions, Char): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, System.Text.RegularExpressions.RegexOptions, System.String): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, System.Text.RegularExpressions.RegexOptions, Int32): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, System.Text.RegularExpressions.RegexOptions, Int32, Int32): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 _type : Assembly
+    System.Collections.Generic.List`1[System.Text.RegularExpressions.RegexNode] _children : Assembly
+    System.String _str : Assembly
+    Char _ch : Assembly
+    Int32 _m : Assembly
+    Int32 _n : Assembly
+    System.Text.RegularExpressions.RegexOptions _options : Assembly
+    System.Text.RegularExpressions.RegexNode _next : Assembly
+    Int32 Oneloop = 3 : Assembly, Static, Literal, HasDefault
+    Int32 Notoneloop = 4 : Assembly, Static, Literal, HasDefault
+    Int32 Setloop = 5 : Assembly, Static, Literal, HasDefault
+    Int32 Onelazy = 6 : Assembly, Static, Literal, HasDefault
+    Int32 Notonelazy = 7 : Assembly, Static, Literal, HasDefault
+    Int32 Setlazy = 8 : Assembly, Static, Literal, HasDefault
+    Int32 One = 9 : Assembly, Static, Literal, HasDefault
+    Int32 Notone = 10 : Assembly, Static, Literal, HasDefault
+    Int32 Set = 11 : Assembly, Static, Literal, HasDefault
+    Int32 Multi = 12 : Assembly, Static, Literal, HasDefault
+    Int32 Ref = 13 : Assembly, Static, Literal, HasDefault
+    Int32 Bol = 14 : Assembly, Static, Literal, HasDefault
+    Int32 Eol = 15 : Assembly, Static, Literal, HasDefault
+    Int32 Boundary = 16 : Assembly, Static, Literal, HasDefault
+    Int32 Nonboundary = 17 : Assembly, Static, Literal, HasDefault
+    Int32 ECMABoundary = 41 : Assembly, Static, Literal, HasDefault
+    Int32 NonECMABoundary = 42 : Assembly, Static, Literal, HasDefault
+    Int32 Beginning = 18 : Assembly, Static, Literal, HasDefault
+    Int32 Start = 19 : Assembly, Static, Literal, HasDefault
+    Int32 EndZ = 20 : Assembly, Static, Literal, HasDefault
+    Int32 End = 21 : Assembly, Static, Literal, HasDefault
+    Int32 Nothing = 22 : Assembly, Static, Literal, HasDefault
+    Int32 Empty = 23 : Assembly, Static, Literal, HasDefault
+    Int32 Alternate = 24 : Assembly, Static, Literal, HasDefault
+    Int32 Concatenate = 25 : Assembly, Static, Literal, HasDefault
+    Int32 Loop = 26 : Assembly, Static, Literal, HasDefault
+    Int32 Lazyloop = 27 : Assembly, Static, Literal, HasDefault
+    Int32 Capture = 28 : Assembly, Static, Literal, HasDefault
+    Int32 Group = 29 : Assembly, Static, Literal, HasDefault
+    Int32 Require = 30 : Assembly, Static, Literal, HasDefault
+    Int32 Prevent = 31 : Assembly, Static, Literal, HasDefault
+    Int32 Greedy = 32 : Assembly, Static, Literal, HasDefault
+    Int32 Testref = 33 : Assembly, Static, Literal, HasDefault
+    Int32 Testgroup = 34 : Assembly, Static, Literal, HasDefault
+  Methods:
+    UseOptionR(): PrivateScope, Assembly, HideBySig
+    ReverseLeft(): PrivateScope, Assembly, HideBySig
+    MakeRep(Int32, Int32, Int32): PrivateScope, Assembly, HideBySig
+    Reduce(): PrivateScope, Assembly, HideBySig
+    StripEnation(Int32): PrivateScope, Assembly, HideBySig
+    ReduceGroup(): PrivateScope, Assembly, HideBySig
+    ReduceRep(): PrivateScope, Assembly, HideBySig
+    ReduceSet(): PrivateScope, Assembly, HideBySig
+    ReduceAlternation(): PrivateScope, Assembly, HideBySig
+    ReduceConcatenation(): PrivateScope, Assembly, HideBySig
+    MakeQuantifier(Boolean, Int32, Int32): PrivateScope, Assembly, HideBySig
+    AddChild(RegexNode): PrivateScope, Assembly, HideBySig
+    Child(Int32): PrivateScope, Assembly, HideBySig
+    ChildCount(): PrivateScope, Assembly, HideBySig
+    Type(): PrivateScope, Assembly, HideBySig
+Struct System.Text.RegularExpressions.RegexOptions: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Text.RegularExpressions.RegexOptions None = 0 : Public, Static, Literal, HasDefault
+    System.Text.RegularExpressions.RegexOptions IgnoreCase = 1 : Public, Static, Literal, HasDefault
+    System.Text.RegularExpressions.RegexOptions Multiline = 2 : Public, Static, Literal, HasDefault
+    System.Text.RegularExpressions.RegexOptions ExplicitCapture = 4 : Public, Static, Literal, HasDefault
+    System.Text.RegularExpressions.RegexOptions Singleline = 16 : Public, Static, Literal, HasDefault
+    System.Text.RegularExpressions.RegexOptions IgnorePatternWhitespace = 32 : Public, Static, Literal, HasDefault
+    System.Text.RegularExpressions.RegexOptions RightToLeft = 64 : Public, Static, Literal, HasDefault
+    System.Text.RegularExpressions.RegexOptions ECMAScript = 256 : Public, Static, Literal, HasDefault
+    System.Text.RegularExpressions.RegexOptions CultureInvariant = 512 : Public, Static, Literal, HasDefault
+Class System.Text.RegularExpressions.RegexParser: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  Fields:
+    System.Text.RegularExpressions.RegexNode _stack : Assembly
+    System.Text.RegularExpressions.RegexNode _group : Assembly
+    System.Text.RegularExpressions.RegexNode _alternation : Assembly
+    System.Text.RegularExpressions.RegexNode _concatenation : Assembly
+    System.Text.RegularExpressions.RegexNode _unit : Assembly
+    System.String _pattern : Assembly
+    Int32 _currentPos : Assembly
+    System.Globalization.CultureInfo _culture : Assembly
+    Int32 _autocap : Assembly
+    Int32 _capcount : Assembly
+    Int32 _captop : Assembly
+    Int32 _capsize : Assembly
+    System.Collections.Generic.Dictionary`2[System.Int32,System.Int32] _caps : Assembly
+    System.Collections.Generic.Dictionary`2[System.String,System.Int32] _capnames : Assembly
+    Int32[] _capnumlist : Assembly
+    System.Collections.Generic.List`1[System.String] _capnamelist : Assembly
+    System.Text.RegularExpressions.RegexOptions _options : Assembly
+    System.Collections.Generic.List`1[System.Text.RegularExpressions.RegexOptions] _optionsStack : Assembly
+    Boolean _ignoreNextParen : Assembly
+    Byte[] _category : Assembly, Static, InitOnly
+    Int32 MaxValueDiv10 = 214748364 : Assembly, Static, Literal, HasDefault
+    Int32 MaxValueMod10 = 7 : Assembly, Static, Literal, HasDefault
+    Byte Q = 5 : Assembly, Static, Literal, HasDefault
+    Byte S = 4 : Assembly, Static, Literal, HasDefault
+    Byte Z = 3 : Assembly, Static, Literal, HasDefault
+    Byte X = 2 : Assembly, Static, Literal, HasDefault
+    Byte E = 1 : Assembly, Static, Literal, HasDefault
+  Methods:
+    Parse(String, RegexOptions): PrivateScope, Assembly, Static, HideBySig
+    ParseReplacement(String, Dictionary`2, Int32, Dictionary`2, RegexOptions): PrivateScope, Assembly, Static, HideBySig
+    Escape(String): PrivateScope, Assembly, Static, HideBySig
+    Unescape(String): PrivateScope, Assembly, Static, HideBySig
+    SetPattern(String): PrivateScope, Assembly, HideBySig
+    Reset(RegexOptions): PrivateScope, Assembly, HideBySig
+    ScanRegex(): PrivateScope, Assembly, HideBySig
+    ScanReplacement(): PrivateScope, Assembly, HideBySig
+    ScanCharClass(Boolean): PrivateScope, Assembly, HideBySig
+    ScanCharClass(Boolean, Boolean): PrivateScope, Assembly, HideBySig
+    ScanGroupOpen(): PrivateScope, Assembly, HideBySig
+    ScanBlank(): PrivateScope, Assembly, HideBySig
+    ScanBackslash(): PrivateScope, Assembly, HideBySig
+    ScanBasicBackslash(): PrivateScope, Assembly, HideBySig
+    ScanDollar(): PrivateScope, Assembly, HideBySig
+    ScanCapname(): PrivateScope, Assembly, HideBySig
+    ScanOctal(): PrivateScope, Assembly, HideBySig
+    ScanDecimal(): PrivateScope, Assembly, HideBySig
+    ScanHex(Int32): PrivateScope, Assembly, HideBySig
+    HexDigit(Char): PrivateScope, Assembly, Static, HideBySig
+    ScanControl(): PrivateScope, Assembly, HideBySig
+    IsOnlyTopOption(RegexOptions): PrivateScope, Assembly, HideBySig
+    ScanOptions(): PrivateScope, Assembly, HideBySig
+    ScanCharEscape(): PrivateScope, Assembly, HideBySig
+    ParseProperty(): PrivateScope, Assembly, HideBySig
+    TypeFromCode(Char): PrivateScope, Assembly, HideBySig
+    OptionFromCode(Char): PrivateScope, Assembly, Static, HideBySig
+    CountCaptures(): PrivateScope, Assembly, HideBySig
+    NoteCaptureSlot(Int32, Int32): PrivateScope, Assembly, HideBySig
+    NoteCaptureName(String, Int32): PrivateScope, Assembly, HideBySig
+    NoteCaptures(Dictionary`2, Int32, Dictionary`2): PrivateScope, Assembly, HideBySig
+    AssignNameSlots(): PrivateScope, Assembly, HideBySig
+    CaptureSlotFromName(String): PrivateScope, Assembly, HideBySig
+    IsCaptureSlot(Int32): PrivateScope, Assembly, HideBySig
+    IsCaptureName(String): PrivateScope, Assembly, HideBySig
+    UseOptionN(): PrivateScope, Assembly, HideBySig
+    UseOptionI(): PrivateScope, Assembly, HideBySig
+    UseOptionM(): PrivateScope, Assembly, HideBySig
+    UseOptionS(): PrivateScope, Assembly, HideBySig
+    UseOptionX(): PrivateScope, Assembly, HideBySig
+    UseOptionE(): PrivateScope, Assembly, HideBySig
+    IsSpecial(Char): PrivateScope, Assembly, Static, HideBySig
+    IsStopperX(Char): PrivateScope, Assembly, Static, HideBySig
+    IsQuantifier(Char): PrivateScope, Assembly, Static, HideBySig
+    IsTrueQuantifier(): PrivateScope, Assembly, HideBySig
+    IsSpace(Char): PrivateScope, Assembly, Static, HideBySig
+    IsMetachar(Char): PrivateScope, Assembly, Static, HideBySig
+    AddConcatenate(Int32, Int32, Boolean): PrivateScope, Assembly, HideBySig
+    PushGroup(): PrivateScope, Assembly, HideBySig
+    PopGroup(): PrivateScope, Assembly, HideBySig
+    EmptyStack(): PrivateScope, Assembly, HideBySig
+    StartGroup(RegexNode): PrivateScope, Assembly, HideBySig
+    AddAlternate(): PrivateScope, Assembly, HideBySig
+    AddConcatenate(): PrivateScope, Assembly, HideBySig
+    AddConcatenate(Boolean, Int32, Int32): PrivateScope, Assembly, HideBySig
+    Unit(): PrivateScope, Assembly, HideBySig
+    AddUnitOne(Char): PrivateScope, Assembly, HideBySig
+    AddUnitNotone(Char): PrivateScope, Assembly, HideBySig
+    AddUnitSet(String): PrivateScope, Assembly, HideBySig
+    AddUnitNode(RegexNode): PrivateScope, Assembly, HideBySig
+    AddUnitType(Int32): PrivateScope, Assembly, HideBySig
+    AddGroup(): PrivateScope, Assembly, HideBySig
+    PushOptions(): PrivateScope, Assembly, HideBySig
+    PopOptions(): PrivateScope, Assembly, HideBySig
+    EmptyOptionsStack(): PrivateScope, Assembly, HideBySig
+    PopKeepOptions(): PrivateScope, Assembly, HideBySig
+    MakeException(String): PrivateScope, Assembly, HideBySig
+    Textpos(): PrivateScope, Assembly, HideBySig
+    Textto(Int32): PrivateScope, Assembly, HideBySig
+    MoveRightGetChar(): PrivateScope, Assembly, HideBySig
+    MoveRight(): PrivateScope, Assembly, HideBySig
+    MoveRight(Int32): PrivateScope, Assembly, HideBySig
+    MoveLeft(): PrivateScope, Assembly, HideBySig
+    CharAt(Int32): PrivateScope, Assembly, HideBySig
+    RightChar(): PrivateScope, Assembly, HideBySig
+    RightChar(Int32): PrivateScope, Assembly, HideBySig
+    CharsRight(): PrivateScope, Assembly, HideBySig
+Class System.Text.RegularExpressions.RegexReplacement: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+    Void .ctor(System.String, System.Text.RegularExpressions.RegexNode, System.Collections.Generic.Dictionary`2[System.Int32,System.Int32]): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String _rep : Assembly
+    System.Collections.Generic.List`1[System.String] _strings : Assembly
+    System.Collections.Generic.List`1[System.Int32] _rules : Assembly
+    Int32 Specials = 4 : Assembly, Static, Literal, HasDefault
+    Int32 LeftPortion = -1 : Assembly, Static, Literal, HasDefault
+    Int32 RightPortion = -2 : Assembly, Static, Literal, HasDefault
+    Int32 LastGroup = -3 : Assembly, Static, Literal, HasDefault
+    Int32 WholeString = -4 : Assembly, Static, Literal, HasDefault
+  Properties:
+    System.String Pattern 'get ' : 
+  Methods:
+    get_Pattern(): PrivateScope, Assembly, HideBySig, SpecialName
+    Replacement(Match): PrivateScope, Assembly, HideBySig
+    Replace(Regex, String, Int32, Int32): PrivateScope, Assembly, HideBySig
+    Replace(MatchEvaluator, Regex, String, Int32, Int32): PrivateScope, Assembly, Static, HideBySig
+    Split(Regex, String, Int32, Int32): PrivateScope, Assembly, Static, HideBySig
+Class System.Text.RegularExpressions.RegexRunnerFactory: AutoLayout, AnsiClass, Class, Abstract, BeforeFieldInit
+Class System.Text.RegularExpressions.RegexTree: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+    Void .ctor(System.Text.RegularExpressions.RegexNode, System.Collections.Generic.Dictionary`2[System.Int32,System.Int32], Int32[], Int32, System.Collections.Generic.Dictionary`2[System.String,System.Int32], System.String[], System.Text.RegularExpressions.RegexOptions): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Text.RegularExpressions.RegexNode _root : Assembly
+    System.Collections.Generic.Dictionary`2[System.Int32,System.Int32] _caps : Assembly
+    Int32[] _capnumlist : Assembly
+    System.Collections.Generic.Dictionary`2[System.String,System.Int32] _capnames : Assembly
+    System.String[] _capslist : Assembly
+    System.Text.RegularExpressions.RegexOptions _options : Assembly
+    Int32 _captop : Assembly
+Class System.Text.RegularExpressions.RegexWriter: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  Fields:
+    Int32[] _intStack : Assembly
+    Int32 _depth : Assembly
+    Int32[] _emitted : Assembly
+    Int32 _curpos : Assembly
+    System.Collections.Generic.Dictionary`2[System.String,System.Int32] _stringhash : Assembly
+    System.Collections.Generic.List`1[System.String] _stringtable : Assembly
+    Boolean _counting : Assembly
+    Int32 _count : Assembly
+    Int32 _trackcount : Assembly
+    System.Collections.Generic.Dictionary`2[System.Int32,System.Int32] _caps : Assembly
+    Int32 BeforeChild = 64 : Assembly, Static, Literal, HasDefault
+    Int32 AfterChild = 128 : Assembly, Static, Literal, HasDefault
+  Methods:
+    Write(RegexTree): PrivateScope, Assembly, Static, HideBySig
+    PushInt(Int32): PrivateScope, Assembly, HideBySig
+    EmptyStack(): PrivateScope, Assembly, HideBySig
+    PopInt(): PrivateScope, Assembly, HideBySig
+    CurPos(): PrivateScope, Assembly, HideBySig
+    PatchJump(Int32, Int32): PrivateScope, Assembly, HideBySig
+    Emit(Int32): PrivateScope, Assembly, HideBySig
+    Emit(Int32, Int32): PrivateScope, Assembly, HideBySig
+    Emit(Int32, Int32, Int32): PrivateScope, Assembly, HideBySig
+    StringCode(String): PrivateScope, Assembly, HideBySig
+    MakeException(String): PrivateScope, Assembly, HideBySig
+    MapCapnum(Int32): PrivateScope, Assembly, HideBySig
+    RegexCodeFromRegexTree(RegexTree): PrivateScope, Assembly, HideBySig
+    EmitFragment(Int32, RegexNode, Int32): PrivateScope, Assembly, HideBySig
+Class System.Text.RegularExpressions.RegexMatchTimeoutException: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.TimeoutException
+    Void .ctor(System.String, System.String, System.TimeSpan): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Pattern 'get ' : 
+    System.String Input 'get ' : 
+    System.TimeSpan MatchTimeout 'get ' : 
+  Methods:
+    get_Pattern(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Input(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_MatchTimeout(): PrivateScope, Assembly, HideBySig, SpecialName
+Class System.Diagnostics.Debug: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Assert(Boolean): PrivateScope, Public, Static, HideBySig
+    Assert(Boolean, String): PrivateScope, Public, Static, HideBySig
+    Assert(Boolean, String, String): PrivateScope, Public, Static, HideBySig
+    Assert(Boolean, String, String, Object[]): PrivateScope, Public, Static, HideBySig
+    WriteLine(String): PrivateScope, Public, Static, HideBySig
+    WriteLine(Object): PrivateScope, Public, Static, HideBySig
+    WriteLine(String, Object[]): PrivateScope, Public, Static, HideBySig
+Class System.Diagnostics.AssertWrapper: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ShowAssert(String, StackFrame, String, String): PrivateScope, Public, Static, HideBySig
+Class System.Diagnostics.MessageBoxPopup: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.String, System.String, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 ReturnValue 'get set' : 
+  Methods:
+    get_ReturnValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_ReturnValue(Int32): PrivateScope, Public, HideBySig, SpecialName
+    ShowMessageBox(): PrivateScope, Public, HideBySig
+    DoPopup(): PrivateScope, Public, HideBySig
+Class Microsoft.Win32.SafeNativeMethods: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 MB_RIGHT = 524288 : Public, Static, Literal, HasDefault
+    Int32 MB_RTLREADING = 1048576 : Public, Static, Literal, HasDefault
+  Methods:
+    CFStringCreateWithCharacters(IntPtr, String(HasFieldMarshal), Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    CFRelease(IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    CFUserNotificationDisplayAlert(Double, UInt32, IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, UInt32&): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    GetTextMetrics(IntPtr, TEXTMETRIC(In, Out)): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    GetStockObject(Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    OutputDebugString(String): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    MessageBox(IntPtr, String, String, Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+Class Microsoft.Win32.UnsafeNativeMethods: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetStdHandle(Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ReleaseDC(IntPtr, IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    GetDC(IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    SelectObject(IntPtr, IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    GetSystemMetrics(Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+Class Microsoft.Win32.NativeMethods: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 DEFAULT_GUI_FONT = 17 : Public, Static, Literal, HasDefault
+    Int32 SM_CYSCREEN = 1 : Public, Static, Literal, HasDefault
+Class Microsoft.Win32.NativeMethods+TEXTMETRIC: AutoLayout, AnsiClass, Class, NestedAssembly, SequentialLayout, AutoClass, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 tmHeight : Public
+    Int32 tmAscent : Public
+    Int32 tmDescent : Public
+    Int32 tmInternalLeading : Public
+    Int32 tmExternalLeading : Public
+    Int32 tmAveCharWidth : Public
+    Int32 tmMaxCharWidth : Public
+    Int32 tmWeight : Public
+    Int32 tmOverhang : Public
+    Int32 tmDigitizedAspectX : Public
+    Int32 tmDigitizedAspectY : Public
+    Char tmFirstChar : Public
+    Char tmLastChar : Public
+    Char tmDefaultChar : Public
+    Char tmBreakChar : Public
+    Byte tmItalic : Public
+    Byte tmUnderlined : Public
+    Byte tmStruckOut : Public
+    Byte tmPitchAndFamily : Public
+    Byte tmCharSet : Public
+Class System.Collections.Generic.System_CollectionDebugView`1[T]: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(System.Collections.Generic.ICollection`1[T]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    T[] Items  'get ' : 
+  Methods:
+    get_Items(): PrivateScope, Public, HideBySig, SpecialName
+Class System.Collections.Generic.System_QueueDebugView`1[T]: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(System.Collections.Generic.Queue`1[T]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    T[] Items  'get ' : 
+  Methods:
+    get_Items(): PrivateScope, Public, HideBySig, SpecialName
+Class System.Collections.Generic.System_StackDebugView`1[T]: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(System.Collections.Generic.Stack`1[T]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    T[] Items  'get ' : 
+  Methods:
+    get_Items(): PrivateScope, Public, HideBySig, SpecialName
+Interface System.Collections.Generic.ISet`1[T]: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Type parameter: T
+  Interfaces:
+    System.Collections.Generic.ICollection`1[T]
+    System.Collections.Generic.IEnumerable`1[T]
+    System.Collections.IEnumerable
+  Methods:
+    Add(T): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    UnionWith(IEnumerable`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    IntersectWith(IEnumerable`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExceptWith(IEnumerable`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SymmetricExceptWith(IEnumerable`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    IsSubsetOf(IEnumerable`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    IsSupersetOf(IEnumerable`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    IsProperSupersetOf(IEnumerable`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    IsProperSubsetOf(IEnumerable`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Overlaps(IEnumerable`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetEquals(IEnumerable`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class System.Collections.Generic.LinkedList`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IEnumerable`1[T]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.ICollection`1[T]
+    System.Collections.Generic.IEnumerable`1[T]
+    System.Collections.IEnumerable
+    System.Collections.ICollection
+  Fields:
+    System.Collections.Generic.LinkedListNode`1[T] head : Assembly
+    Int32 count : Assembly
+    Int32 version : Assembly
+  Properties:
+    Int32 Count 'get ' : 
+    System.Collections.Generic.LinkedListNode`1[T] First 'get ' : 
+    System.Collections.Generic.LinkedListNode`1[T] Last 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_First(): PrivateScope, Public, HideBySig, SpecialName
+    get_Last(): PrivateScope, Public, HideBySig, SpecialName
+    AddAfter(LinkedListNode`1, T): PrivateScope, Public, HideBySig
+    AddAfter(LinkedListNode`1, LinkedListNode`1): PrivateScope, Public, HideBySig
+    AddBefore(LinkedListNode`1, T): PrivateScope, Public, HideBySig
+    AddBefore(LinkedListNode`1, LinkedListNode`1): PrivateScope, Public, HideBySig
+    AddFirst(T): PrivateScope, Public, HideBySig
+    AddFirst(LinkedListNode`1): PrivateScope, Public, HideBySig
+    AddLast(T): PrivateScope, Public, HideBySig
+    AddLast(LinkedListNode`1): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Contains(T): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CopyTo(T[], Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Find(T): PrivateScope, Public, HideBySig
+    FindLast(T): PrivateScope, Public, HideBySig
+    GetEnumerator(): PrivateScope, Public, HideBySig
+    Remove(T): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Remove(LinkedListNode`1): PrivateScope, Public, HideBySig
+    RemoveFirst(): PrivateScope, Public, HideBySig
+    RemoveLast(): PrivateScope, Public, HideBySig
+    InternalRemoveNode(LinkedListNode`1): PrivateScope, Assembly, HideBySig
+    ValidateNewNode(LinkedListNode`1): PrivateScope, Assembly, HideBySig
+    ValidateNode(LinkedListNode`1): PrivateScope, Assembly, HideBySig
+Struct System.Collections.Generic.LinkedList`1+Enumerator[T]: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  Type parameter: T
+  :System.ValueType
+    Void .ctor(System.Collections.Generic.LinkedList`1[T]): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerator`1[T]
+    System.IDisposable
+    System.Collections.IEnumerator
+  Properties:
+    T Current  'get ' : 
+  Methods:
+    get_Current(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    MoveNext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Collections.Generic.LinkedListNode`1[T]: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(T): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.LinkedList`1[T], T): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Collections.Generic.LinkedList`1[T] list : Assembly
+    System.Collections.Generic.LinkedListNode`1[T] next : Assembly
+    System.Collections.Generic.LinkedListNode`1[T] prev : Assembly
+    T item : Assembly
+  Properties:
+    System.Collections.Generic.LinkedList`1[T] List 'get ' : 
+    System.Collections.Generic.LinkedListNode`1[T] Next 'get ' : 
+    System.Collections.Generic.LinkedListNode`1[T] Previous 'get ' : 
+    T Value    'get set' : 
+  Methods:
+    get_List(): PrivateScope, Public, HideBySig, SpecialName
+    get_Next(): PrivateScope, Public, HideBySig, SpecialName
+    get_Previous(): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    set_Value(T): PrivateScope, Public, HideBySig, SpecialName
+    Invalidate(): PrivateScope, Assembly, HideBySig
+Class System.Collections.Generic.Queue`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IEnumerable`1[T]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[T]
+    System.Collections.IEnumerable
+    System.Collections.ICollection
+  Properties:
+    Int32 Count 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Clear(): PrivateScope, Public, HideBySig
+    CopyTo(T[], Int32): PrivateScope, Public, HideBySig
+    Enqueue(T): PrivateScope, Public, HideBySig
+    GetEnumerator(): PrivateScope, Public, HideBySig
+    Dequeue(): PrivateScope, Public, HideBySig
+    Peek(): PrivateScope, Public, HideBySig
+    Contains(T): PrivateScope, Public, HideBySig
+    GetElement(Int32): PrivateScope, Assembly, HideBySig
+    ToArray(): PrivateScope, Public, HideBySig
+    TrimExcess(): PrivateScope, Public, HideBySig
+Struct System.Collections.Generic.Queue`1+Enumerator[T]: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  Type parameter: T
+  :System.ValueType
+    Void .ctor(System.Collections.Generic.Queue`1[T]): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerator`1[T]
+    System.IDisposable
+    System.Collections.IEnumerator
+  Properties:
+    T Current  'get ' : 
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    MoveNext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Current(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class System.Collections.Generic.Stack`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IEnumerable`1[T]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[T]
+    System.Collections.IEnumerable
+    System.Collections.ICollection
+  Properties:
+    Int32 Count 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Clear(): PrivateScope, Public, HideBySig
+    Contains(T): PrivateScope, Public, HideBySig
+    CopyTo(T[], Int32): PrivateScope, Public, HideBySig
+    GetEnumerator(): PrivateScope, Public, HideBySig
+    TrimExcess(): PrivateScope, Public, HideBySig
+    Peek(): PrivateScope, Public, HideBySig
+    Pop(): PrivateScope, Public, HideBySig
+    Push(T): PrivateScope, Public, HideBySig
+    ToArray(): PrivateScope, Public, HideBySig
+Struct System.Collections.Generic.Stack`1+Enumerator[T]: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  Type parameter: T
+  :System.ValueType
+    Void .ctor(System.Collections.Generic.Stack`1[T]): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerator`1[T]
+    System.IDisposable
+    System.Collections.IEnumerator
+  Properties:
+    T Current  'get ' : 
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    MoveNext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Current(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class System.ThrowHelper: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ThrowWrongKeyTypeArgumentException(Object, Type): PrivateScope, Assembly, Static, HideBySig
+    ThrowWrongValueTypeArgumentException(Object, Type): PrivateScope, Assembly, Static, HideBySig
+    ThrowKeyNotFoundException(): PrivateScope, Assembly, Static, HideBySig
+    ThrowArgumentException(ExceptionResource): PrivateScope, Assembly, Static, HideBySig
+    ThrowArgumentNullException(ExceptionArgument): PrivateScope, Assembly, Static, HideBySig
+    ThrowArgumentOutOfRangeException(ExceptionArgument): PrivateScope, Assembly, Static, HideBySig
+    ThrowArgumentOutOfRangeException(ExceptionArgument, ExceptionResource): PrivateScope, Assembly, Static, HideBySig
+    ThrowInvalidOperationException(ExceptionResource): PrivateScope, Assembly, Static, HideBySig
+    ThrowNotSupportedException(ExceptionResource): PrivateScope, Assembly, Static, HideBySig
+    IfNullAndNullsAreIllegalThenThrow(Object, ExceptionArgument): PrivateScope, Assembly, Static, HideBySig
+    GetArgumentName(ExceptionArgument): PrivateScope, Assembly, Static, HideBySig
+    GetResourceName(ExceptionResource): PrivateScope, Assembly, Static, HideBySig
+Struct System.ExceptionArgument: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.ExceptionArgument obj = 0 : Public, Static, Literal, HasDefault
+    System.ExceptionArgument dictionary = 1 : Public, Static, Literal, HasDefault
+    System.ExceptionArgument array = 2 : Public, Static, Literal, HasDefault
+    System.ExceptionArgument info = 3 : Public, Static, Literal, HasDefault
+    System.ExceptionArgument key = 4 : Public, Static, Literal, HasDefault
+    System.ExceptionArgument collection = 5 : Public, Static, Literal, HasDefault
+    System.ExceptionArgument match = 6 : Public, Static, Literal, HasDefault
+    System.ExceptionArgument converter = 7 : Public, Static, Literal, HasDefault
+    System.ExceptionArgument queue = 8 : Public, Static, Literal, HasDefault
+    System.ExceptionArgument stack = 9 : Public, Static, Literal, HasDefault
+    System.ExceptionArgument capacity = 10 : Public, Static, Literal, HasDefault
+    System.ExceptionArgument index = 11 : Public, Static, Literal, HasDefault
+    System.ExceptionArgument startIndex = 12 : Public, Static, Literal, HasDefault
+    System.ExceptionArgument value = 13 : Public, Static, Literal, HasDefault
+    System.ExceptionArgument count = 14 : Public, Static, Literal, HasDefault
+    System.ExceptionArgument arrayIndex = 15 : Public, Static, Literal, HasDefault
+    System.ExceptionArgument item = 16 : Public, Static, Literal, HasDefault
+Struct System.ExceptionResource: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.ExceptionResource Argument_ImplementIComparable = 0 : Public, Static, Literal, HasDefault
+    System.ExceptionResource ArgumentOutOfRange_NeedNonNegNum = 1 : Public, Static, Literal, HasDefault
+    System.ExceptionResource ArgumentOutOfRange_NeedNonNegNumRequired = 2 : Public, Static, Literal, HasDefault
+    System.ExceptionResource Arg_ArrayPlusOffTooSmall = 3 : Public, Static, Literal, HasDefault
+    System.ExceptionResource Argument_AddingDuplicate = 4 : Public, Static, Literal, HasDefault
+    System.ExceptionResource Serialization_InvalidOnDeser = 5 : Public, Static, Literal, HasDefault
+    System.ExceptionResource Serialization_MismatchedCount = 6 : Public, Static, Literal, HasDefault
+    System.ExceptionResource Serialization_MissingValues = 7 : Public, Static, Literal, HasDefault
+    System.ExceptionResource Arg_RankMultiDimNotSupported = 8 : Public, Static, Literal, HasDefault
+    System.ExceptionResource Arg_NonZeroLowerBound = 9 : Public, Static, Literal, HasDefault
+    System.ExceptionResource Argument_InvalidArrayType = 10 : Public, Static, Literal, HasDefault
+    System.ExceptionResource NotSupported_KeyCollectionSet = 11 : Public, Static, Literal, HasDefault
+    System.ExceptionResource ArgumentOutOfRange_SmallCapacity = 12 : Public, Static, Literal, HasDefault
+    System.ExceptionResource ArgumentOutOfRange_Index = 13 : Public, Static, Literal, HasDefault
+    System.ExceptionResource Argument_InvalidOffLen = 14 : Public, Static, Literal, HasDefault
+    System.ExceptionResource NotSupported_ReadOnlyCollection = 15 : Public, Static, Literal, HasDefault
+    System.ExceptionResource InvalidOperation_CannotRemoveFromStackOrQueue = 16 : Public, Static, Literal, HasDefault
+    System.ExceptionResource InvalidOperation_EmptyCollection = 17 : Public, Static, Literal, HasDefault
+    System.ExceptionResource InvalidOperation_EmptyQueue = 18 : Public, Static, Literal, HasDefault
+    System.ExceptionResource InvalidOperation_EnumOpCantHappen = 19 : Public, Static, Literal, HasDefault
+    System.ExceptionResource InvalidOperation_EnumFailedVersion = 20 : Public, Static, Literal, HasDefault
+    System.ExceptionResource InvalidOperation_EmptyStack = 21 : Public, Static, Literal, HasDefault
+    System.ExceptionResource InvalidOperation_EnumNotStarted = 22 : Public, Static, Literal, HasDefault
+    System.ExceptionResource InvalidOperation_EnumEnded = 23 : Public, Static, Literal, HasDefault
+    System.ExceptionResource NotSupported_SortedListNestedWrite = 24 : Public, Static, Literal, HasDefault
+    System.ExceptionResource NotSupported_ValueCollectionSet = 25 : Public, Static, Literal, HasDefault
+Class System.ComponentModel.BindableAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Boolean, System.ComponentModel.BindingDirection): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.BindableSupport): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.ComponentModel.BindableSupport, System.ComponentModel.BindingDirection): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.ComponentModel.BindableAttribute Yes : Public, Static, InitOnly
+    System.ComponentModel.BindableAttribute No : Public, Static, InitOnly
+    System.ComponentModel.BindableAttribute Default : Public, Static, InitOnly
+  Properties:
+    Boolean Bindable 'get ' : 
+    System.ComponentModel.BindingDirection Direction 'get ' : 
+  Methods:
+    get_Bindable(): PrivateScope, Public, HideBySig, SpecialName
+    get_Direction(): PrivateScope, Public, HideBySig, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.BrowsableAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.ComponentModel.BrowsableAttribute Yes : Public, Static, InitOnly
+    System.ComponentModel.BrowsableAttribute No : Public, Static, InitOnly
+    System.ComponentModel.BrowsableAttribute Default : Public, Static, InitOnly
+  Properties:
+    Boolean Browsable 'get ' : 
+  Methods:
+    get_Browsable(): PrivateScope, Public, HideBySig, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DesignTimeVisibleAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.ComponentModel.DesignTimeVisibleAttribute Yes : Public, Static, InitOnly
+    System.ComponentModel.DesignTimeVisibleAttribute No : Public, Static, InitOnly
+    System.ComponentModel.DesignTimeVisibleAttribute Default : Public, Static, InitOnly
+  Properties:
+    Boolean Visible 'get ' : 
+  Methods:
+    get_Visible(): PrivateScope, Public, HideBySig, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.EditorBrowsableAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.ComponentModel.EditorBrowsableState): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.ComponentModel.EditorBrowsableState State 'get ' : 
+  Methods:
+    get_State(): PrivateScope, Public, HideBySig, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+Struct System.ComponentModel.EditorBrowsableState: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.ComponentModel.EditorBrowsableState Always = 0 : Public, Static, Literal, HasDefault
+    System.ComponentModel.EditorBrowsableState Never = 1 : Public, Static, Literal, HasDefault
+    System.ComponentModel.EditorBrowsableState Advanced = 2 : Public, Static, Literal, HasDefault
+Class System.CodeDom.Compiler.GeneratedCodeAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Tool 'get ' : 
+    System.String Version 'get ' : 
+  Methods:
+    get_Tool(): PrivateScope, Public, HideBySig, SpecialName
+    get_Version(): PrivateScope, Public, HideBySig, SpecialName
+Interface System.ComponentModel.IContainer: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    System.IDisposable
+  Properties:
+    System.ComponentModel.ComponentCollection Components 'get ' : 
+  Methods:
+    Add(IComponent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Add(IComponent, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Components(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Remove(IComponent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface System.ComponentModel.INotifyPropertyChanging: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Events:
+    System.ComponentModel.PropertyChangingEventHandler PropertyChanging: 
+  Methods:
+    add_PropertyChanging(PropertyChangingEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    remove_PropertyChanging(PropertyChangingEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface System.ComponentModel.ISite: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    System.IServiceProvider
+  Properties:
+    System.ComponentModel.IComponent Component 'get ' : 
+    System.ComponentModel.IContainer Container 'get ' : 
+    Boolean DesignMode 'get ' : 
+    System.String Name 'get set' : 
+  Methods:
+    get_Component(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Container(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DesignMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Name(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface System.ComponentModel.ISupportInitialize: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    BeginInit(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    EndInit(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Struct System.ComponentModel.BindableSupport: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.ComponentModel.BindableSupport No = 0 : Public, Static, Literal, HasDefault
+    System.ComponentModel.BindableSupport Yes = 1 : Public, Static, Literal, HasDefault
+    System.ComponentModel.BindableSupport Default = 2 : Public, Static, Literal, HasDefault
+Class System.ComponentModel.CategoryAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.ComponentModel.CategoryAttribute Action 'get ' : 
+    System.ComponentModel.CategoryAttribute Appearance 'get ' : 
+    System.ComponentModel.CategoryAttribute Asynchronous 'get ' : 
+    System.ComponentModel.CategoryAttribute Behavior 'get ' : 
+    System.ComponentModel.CategoryAttribute Data 'get ' : 
+    System.ComponentModel.CategoryAttribute Default 'get ' : 
+    System.ComponentModel.CategoryAttribute Design 'get ' : 
+    System.ComponentModel.CategoryAttribute DragDrop 'get ' : 
+    System.ComponentModel.CategoryAttribute Focus 'get ' : 
+    System.ComponentModel.CategoryAttribute Format 'get ' : 
+    System.ComponentModel.CategoryAttribute Key 'get ' : 
+    System.ComponentModel.CategoryAttribute Layout 'get ' : 
+    System.ComponentModel.CategoryAttribute Mouse 'get ' : 
+    System.ComponentModel.CategoryAttribute WindowStyle 'get ' : 
+    System.String Category 'get ' : 
+  Methods:
+    get_Action(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Appearance(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Asynchronous(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Behavior(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Data(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Default(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Design(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DragDrop(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Focus(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Format(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Key(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Layout(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Mouse(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_WindowStyle(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Category(): PrivateScope, Public, HideBySig, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.ComplexBindingPropertiesAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.ComponentModel.ComplexBindingPropertiesAttribute Default : Public, Static, InitOnly
+  Properties:
+    System.String DataSource 'get ' : 
+    System.String DataMember 'get ' : 
+  Methods:
+    get_DataSource(): PrivateScope, Public, HideBySig, SpecialName
+    get_DataMember(): PrivateScope, Public, HideBySig, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DefaultBindingPropertyAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.ComponentModel.DefaultBindingPropertyAttribute Default : Public, Static, InitOnly
+  Properties:
+    System.String Name 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DefaultEventAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.ComponentModel.DefaultEventAttribute Default : Public, Static, InitOnly
+  Properties:
+    System.String Name 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DefaultPropertyAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.ComponentModel.DefaultPropertyAttribute Default : Public, Static, InitOnly
+  Properties:
+    System.String Name 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DefaultValueAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.Type, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Char): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Byte): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int16): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int64): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Object Value 'get ' : 
+  Methods:
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DescriptionAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.ComponentModel.DescriptionAttribute Default : Public, Static, InitOnly
+  Properties:
+    System.String Description 'get ' : 
+  Methods:
+    get_Description(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.LookupBindingPropertiesAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.ComponentModel.LookupBindingPropertiesAttribute Default : Public, Static, InitOnly
+  Properties:
+    System.String DataSource 'get ' : 
+    System.String DisplayMember 'get ' : 
+    System.String ValueMember 'get ' : 
+    System.String LookupMember 'get ' : 
+  Methods:
+    get_DataSource(): PrivateScope, Public, HideBySig, SpecialName
+    get_DisplayMember(): PrivateScope, Public, HideBySig, SpecialName
+    get_ValueMember(): PrivateScope, Public, HideBySig, SpecialName
+    get_LookupMember(): PrivateScope, Public, HideBySig, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.PropertyChangingEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String PropertyName 'get ' : 
+  Methods:
+    get_PropertyName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class System.ComponentModel.PropertyChangingEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, PropertyChangingEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, PropertyChangingEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class System.ExternDll: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.String Activeds = activeds.dll : Public, Static, Literal, HasDefault
+    System.String Advapi32 = advapi32.dll : Public, Static, Literal, HasDefault
+    System.String Comctl32 = comctl32.dll : Public, Static, Literal, HasDefault
+    System.String Comdlg32 = comdlg32.dll : Public, Static, Literal, HasDefault
+    System.String Gdi32 = gdi32.dll : Public, Static, Literal, HasDefault
+    System.String Gdiplus = gdiplus.dll : Public, Static, Literal, HasDefault
+    System.String Hhctrl = hhctrl.ocx : Public, Static, Literal, HasDefault
+    System.String Imm32 = imm32.dll : Public, Static, Literal, HasDefault
+    System.String Kernel32 = kernel32.dll : Public, Static, Literal, HasDefault
+    System.String Loadperf = Loadperf.dll : Public, Static, Literal, HasDefault
+    System.String Mscoree = mscoree.dll : Public, Static, Literal, HasDefault
+    System.String Clr = clr.dll : Public, Static, Literal, HasDefault
+    System.String Msi = msi.dll : Public, Static, Literal, HasDefault
+    System.String Mqrt = mqrt.dll : Public, Static, Literal, HasDefault
+    System.String Ntdll = ntdll.dll : Public, Static, Literal, HasDefault
+    System.String Ole32 = ole32.dll : Public, Static, Literal, HasDefault
+    System.String Oleacc = oleacc.dll : Public, Static, Literal, HasDefault
+    System.String Oleaut32 = oleaut32.dll : Public, Static, Literal, HasDefault
+    System.String Olepro32 = olepro32.dll : Public, Static, Literal, HasDefault
+    System.String PerfCounter = perfcounter.dll : Public, Static, Literal, HasDefault
+    System.String Powrprof = Powrprof.dll : Public, Static, Literal, HasDefault
+    System.String Psapi = psapi.dll : Public, Static, Literal, HasDefault
+    System.String Shell32 = shell32.dll : Public, Static, Literal, HasDefault
+    System.String Shfolder = shfolder.dll : Public, Static, Literal, HasDefault
+    System.String User32 = user32.dll : Public, Static, Literal, HasDefault
+    System.String Uxtheme = uxtheme.dll : Public, Static, Literal, HasDefault
+    System.String WinMM = winmm.dll : Public, Static, Literal, HasDefault
+    System.String Winspool = winspool.drv : Public, Static, Literal, HasDefault
+    System.String Wtsapi32 = wtsapi32.dll : Public, Static, Literal, HasDefault
+    System.String Version = version.dll : Public, Static, Literal, HasDefault
+    System.String Vsassert = vsassert.dll : Public, Static, Literal, HasDefault
+    System.String Fxassert = Fxassert.dll : Public, Static, Literal, HasDefault
+    System.String Shlwapi = shlwapi.dll : Public, Static, Literal, HasDefault
+    System.String Crypt32 = crypt32.dll : Public, Static, Literal, HasDefault
+    System.String Odbc32 = odbc32.dll : Assembly, Static, Literal, HasDefault
+    System.String SNI = System.Data.dll : Assembly, Static, Literal, HasDefault
+    System.String OciDll = oci.dll : Assembly, Static, Literal, HasDefault
+    System.String OraMtsDll = oramts.dll : Assembly, Static, Literal, HasDefault
+Class System.UriParser: AutoLayout, AnsiClass, Class, Public, Abstract
+    Void .ctor(System.UriSyntaxFlags): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.UriParser HttpUri : Assembly, Static
+    System.UriParser HttpsUri : Assembly, Static
+    System.UriParser FtpUri : Assembly, Static
+    System.UriParser FileUri : Assembly, Static
+    System.UriParser GopherUri : Assembly, Static
+    System.UriParser NntpUri : Assembly, Static
+    System.UriParser NewsUri : Assembly, Static
+    System.UriParser MailToUri : Assembly, Static
+    System.UriParser UuidUri : Assembly, Static
+    System.UriParser TelnetUri : Assembly, Static
+    System.UriParser LdapUri : Assembly, Static
+    System.UriParser NetTcpUri : Assembly, Static
+    System.UriParser NetPipeUri : Assembly, Static
+    System.UriParser VsMacrosUri : Assembly, Static
+    Int32 NoDefaultPort = -1 : Assembly, Static, Literal, HasDefault
+  Properties:
+    System.String SchemeName 'get ' : 
+    Int32 DefaultPort 'get ' : 
+    System.UriSyntaxFlags Flags 'get ' : 
+    Boolean IsSimple 'get ' : 
+  Methods:
+    get_SchemeName(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_DefaultPort(): PrivateScope, Assembly, HideBySig, SpecialName
+    Register(UriParser, String, Int32): PrivateScope, Public, Static, HideBySig
+    IsKnownScheme(String): PrivateScope, Public, Static, HideBySig
+    get_Flags(): PrivateScope, Assembly, HideBySig, SpecialName
+    NotAny(UriSyntaxFlags): PrivateScope, Assembly, HideBySig
+    InFact(UriSyntaxFlags): PrivateScope, Assembly, HideBySig
+    IsAllSet(UriSyntaxFlags): PrivateScope, Assembly, HideBySig
+    FindOrFetchAsUnknownV1Syntax(String): PrivateScope, Assembly, Static, HideBySig
+    GetSyntax(String): PrivateScope, Assembly, Static, HideBySig
+    get_IsSimple(): PrivateScope, Assembly, HideBySig, SpecialName
+    CheckSetIsSimpleFlag(): PrivateScope, Assembly, HideBySig
+    InternalOnNewUri(): PrivateScope, Assembly, HideBySig
+    InternalValidate(Uri, UriFormatException&(Out)): PrivateScope, Assembly, HideBySig
+    InternalResolve(Uri, Uri, UriFormatException&(Out)): PrivateScope, Assembly, HideBySig
+    InternalIsBaseOf(Uri, Uri): PrivateScope, Assembly, HideBySig
+    InternalIsWellFormedOriginalString(Uri): PrivateScope, Assembly, HideBySig
+    InternalGetComponents(Uri, UriComponents, UriFormat): PrivateScope, Assembly, HideBySig
+Class System.Uri: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.UriKind): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Uri, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Uri, System.Uri): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String UriSchemeFile : Public, Static, InitOnly
+    System.String UriSchemeFtp : Public, Static, InitOnly
+    System.String UriSchemeGopher : Public, Static, InitOnly
+    System.String UriSchemeHttp : Public, Static, InitOnly
+    System.String UriSchemeHttps : Public, Static, InitOnly
+    System.String UriSchemeMailto : Public, Static, InitOnly
+    System.String UriSchemeNews : Public, Static, InitOnly
+    System.String UriSchemeNntp : Public, Static, InitOnly
+    System.String UriSchemeNetTcp : Public, Static, InitOnly
+    System.String UriSchemeNetPipe : Public, Static, InitOnly
+    System.String SchemeDelimiter : Public, Static, InitOnly
+    Char[] HexLowerChars : Assembly, Static, InitOnly
+  Properties:
+    Boolean UserDrivenParsing 'get ' : 
+    System.String AbsolutePath 'get ' : 
+    System.String AbsoluteUri 'get ' : 
+    System.String LocalPath 'get ' : 
+    Boolean IsUnc 'get ' : 
+    Boolean UserEscaped 'get ' : 
+    System.String Host 'get ' : 
+    Int32 Port 'get ' : 
+    System.String Query 'get ' : 
+    System.String Fragment 'get ' : 
+    System.String Scheme 'get ' : 
+    System.String OriginalString 'get ' : 
+    System.String DnsSafeHost 'get ' : 
+    Boolean IsAbsoluteUri 'get ' : 
+    System.String UserInfo 'get ' : 
+    Boolean HasAuthority 'get ' : 
+  Methods:
+    get_UserDrivenParsing(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_AbsolutePath(): PrivateScope, Public, HideBySig, SpecialName
+    get_AbsoluteUri(): PrivateScope, Public, HideBySig, SpecialName
+    get_LocalPath(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsUnc(): PrivateScope, Public, HideBySig, SpecialName
+    get_UserEscaped(): PrivateScope, Public, HideBySig, SpecialName
+    get_Host(): PrivateScope, Public, HideBySig, SpecialName
+    get_Port(): PrivateScope, Public, HideBySig, SpecialName
+    get_Query(): PrivateScope, Public, HideBySig, SpecialName
+    get_Fragment(): PrivateScope, Public, HideBySig, SpecialName
+    get_Scheme(): PrivateScope, Public, HideBySig, SpecialName
+    get_OriginalString(): PrivateScope, Public, HideBySig, SpecialName
+    get_DnsSafeHost(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsAbsoluteUri(): PrivateScope, Public, HideBySig, SpecialName
+    get_UserInfo(): PrivateScope, Public, HideBySig, SpecialName
+    CheckSchemeName(String): PrivateScope, Public, Static, HideBySig
+    IsHexDigit(Char): PrivateScope, Public, Static, HideBySig
+    FromHex(Char): PrivateScope, Public, Static, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    op_Equality(Uri, Uri): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(Uri, Uri): PrivateScope, Public, Static, HideBySig, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    MakeRelativeUri(Uri): PrivateScope, Public, HideBySig
+    InternalEscapeString(String): PrivateScope, Assembly, Static, HideBySig
+    ParseMinimal(): PrivateScope, Assembly, HideBySig
+    GetParts(UriComponents, UriFormat): PrivateScope, Assembly, HideBySig
+    CalculateCaseInsensitiveHashCode(String): PrivateScope, Assembly, Static, HideBySig
+    get_HasAuthority(): PrivateScope, Assembly, HideBySig, SpecialName
+    IsBidiControlCharacter(Char): PrivateScope, Assembly, Static, HideBySig
+    StripBidiControlCharacter(Char*, Int32, Int32): PrivateScope, Assembly, Static, HideBySig
+    TryCreate(String, UriKind, Uri&(Out)): PrivateScope, Public, Static, HideBySig
+    TryCreate(Uri, String, Uri&(Out)): PrivateScope, Public, Static, HideBySig
+    TryCreate(Uri, Uri, Uri&(Out)): PrivateScope, Public, Static, HideBySig
+    GetComponents(UriComponents, UriFormat): PrivateScope, Public, HideBySig
+    Compare(Uri, Uri, UriComponents, UriFormat, StringComparison): PrivateScope, Public, Static, HideBySig
+    IsBaseOf(Uri): PrivateScope, Public, HideBySig
+    IsBaseOfHelper(Uri): PrivateScope, Assembly, HideBySig
+    IsWellFormedOriginalString(): PrivateScope, Assembly, HideBySig
+    IsWellFormedUriString(String, UriKind): PrivateScope, Public, Static, HideBySig
+    InternalIsWellFormedOriginalString(): PrivateScope, Assembly, HideBySig
+    EscapeUriString(String): PrivateScope, Public, Static, HideBySig
+    EscapeDataString(String): PrivateScope, Public, Static, HideBySig
+    UnescapeDataString(String): PrivateScope, Public, Static, HideBySig
+    CreateHelper(String, Boolean, UriKind, UriFormatException&): PrivateScope, Assembly, Static, HideBySig
+    ResolveHelper(Uri, Uri, String&, Boolean&, UriFormatException&(Out)): PrivateScope, Assembly, Static, HideBySig
+    GetComponentsHelper(UriComponents, UriFormat): PrivateScope, Assembly, HideBySig
+Class System.UriBuilder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Uri): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, Int32, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Fragment 'get set' : 
+    System.String Host 'get set' : 
+    System.String Password 'get set' : 
+    System.String Path 'get set' : 
+    Int32 Port 'get set' : 
+    System.String Query 'get set' : 
+    System.String Scheme 'get set' : 
+    System.Uri Uri 'get ' : 
+    System.String UserName 'get set' : 
+  Methods:
+    get_Fragment(): PrivateScope, Public, HideBySig, SpecialName
+    set_Fragment(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Host(): PrivateScope, Public, HideBySig, SpecialName
+    set_Host(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Password(): PrivateScope, Public, HideBySig, SpecialName
+    set_Password(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Path(): PrivateScope, Public, HideBySig, SpecialName
+    set_Path(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Port(): PrivateScope, Public, HideBySig, SpecialName
+    set_Port(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Query(): PrivateScope, Public, HideBySig, SpecialName
+    set_Query(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Scheme(): PrivateScope, Public, HideBySig, SpecialName
+    set_Scheme(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Uri(): PrivateScope, Public, HideBySig, SpecialName
+    get_UserName(): PrivateScope, Public, HideBySig, SpecialName
+    set_UserName(String): PrivateScope, Public, HideBySig, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.UriFormatException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.FormatException
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.DomainNameHelper: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  Fields:
+    System.String Localhost = localhost : Assembly, Static, Literal, HasDefault
+    System.String Loopback = loopback : Assembly, Static, Literal, HasDefault
+  Methods:
+    ParseCanonicalName(String, Int32, Int32, Boolean&): PrivateScope, Assembly, Static, HideBySig
+    IsValid(Char*, UInt16, Int32&, Boolean&, Boolean): PrivateScope, Assembly, Static, HideBySig
+    IsValidByIri(Char*, UInt16, Int32&, Boolean&, Boolean): PrivateScope, Assembly, Static, HideBySig
+    IdnEquivalent(Char*, Int32, Int32, Boolean&, Boolean&): PrivateScope, Assembly, Static, HideBySig
+    IdnEquivalent(Char*, Int32, Int32, Boolean&, String&): PrivateScope, Assembly, Static, HideBySig
+    UnicodeEquivalent(String, Char*, Int32, Int32): PrivateScope, Assembly, Static, HideBySig
+    UnicodeEquivalent(Char*, Int32, Int32, Boolean&, Boolean&): PrivateScope, Assembly, Static, HideBySig
+Class System.IdnMapping: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetUnicode(String): PrivateScope, Assembly, HideBySig
+    GetAscii(String): PrivateScope, Assembly, HideBySig
+Class System.IPv4AddressHelper: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  Methods:
+    ParseCanonicalName(String, Int32, Int32, Boolean&): PrivateScope, Assembly, Static, HideBySig
+    ParseHostNumber(String, Int32, Int32): PrivateScope, Assembly, Static, HideBySig
+    IsValid(Char*, Int32, Int32&, Boolean, Boolean): PrivateScope, Assembly, Static, HideBySig
+Class System.IPv6AddressHelper: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  Methods:
+    ParseCanonicalName(String, Int32, Boolean&, String&): PrivateScope, Assembly, Static, HideBySig
+    IsValid(Char*, Int32, Int32&): PrivateScope, Assembly, Static, HideBySig
+    Parse(String, UInt16*, Int32, String&): PrivateScope, Assembly, Static, HideBySig
+Class System.UncNameHelper: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  Fields:
+    Int32 MaximumInternetNameLength = 256 : Assembly, Static, Literal, HasDefault
+  Methods:
+    ParseCanonicalName(String, Int32, Int32, Boolean&): PrivateScope, Assembly, Static, HideBySig
+    IsValid(Char*, UInt16, Int32&, Boolean): PrivateScope, Assembly, Static, HideBySig
+Struct System.UriSyntaxFlags: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.UriSyntaxFlags MustHaveAuthority = 1 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags OptionalAuthority = 2 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags MayHaveUserInfo = 4 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags MayHavePort = 8 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags MayHavePath = 16 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags MayHaveQuery = 32 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags MayHaveFragment = 64 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags AllowEmptyHost = 128 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags AllowUncHost = 256 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags AllowDnsHost = 512 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags AllowIPv4Host = 1024 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags AllowIPv6Host = 2048 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags AllowAnInternetHost = 3584 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags AllowAnyOtherHost = 4096 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags FileLikeUri = 8192 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags MailToLikeUri = 16384 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags V1_UnknownUri = 65536 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags SimpleUserSyntax = 131072 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags BuiltInSyntax = 262144 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags ParserSchemeOnly = 524288 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags AllowDOSPath = 1048576 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags PathIsRooted = 2097152 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags ConvertPathSlashes = 4194304 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags CompressPath = 8388608 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags CanonicalizeAsFilePath = 16777216 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags UnEscapeDotsAndSlashes = 33554432 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags AllowIdn = 67108864 : Public, Static, Literal, HasDefault
+    System.UriSyntaxFlags AllowIriParsing = 268435456 : Public, Static, Literal, HasDefault
+Struct System.UriKind: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.UriKind RelativeOrAbsolute = 0 : Public, Static, Literal, HasDefault
+    System.UriKind Absolute = 1 : Public, Static, Literal, HasDefault
+    System.UriKind Relative = 2 : Public, Static, Literal, HasDefault
+Struct System.UriComponents: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.UriComponents Scheme = 1 : Public, Static, Literal, HasDefault
+    System.UriComponents UserInfo = 2 : Public, Static, Literal, HasDefault
+    System.UriComponents Host = 4 : Public, Static, Literal, HasDefault
+    System.UriComponents Port = 8 : Public, Static, Literal, HasDefault
+    System.UriComponents Path = 16 : Public, Static, Literal, HasDefault
+    System.UriComponents Query = 32 : Public, Static, Literal, HasDefault
+    System.UriComponents Fragment = 64 : Public, Static, Literal, HasDefault
+    System.UriComponents StrongPort = 128 : Public, Static, Literal, HasDefault
+    System.UriComponents KeepDelimiter = 1073741824 : Public, Static, Literal, HasDefault
+    System.UriComponents SerializationInfoString = -2147483648 : Public, Static, Literal, HasDefault
+    System.UriComponents AbsoluteUri = 127 : Public, Static, Literal, HasDefault
+    System.UriComponents HostAndPort = 132 : Public, Static, Literal, HasDefault
+    System.UriComponents StrongAuthority = 134 : Public, Static, Literal, HasDefault
+    System.UriComponents SchemeAndServer = 13 : Public, Static, Literal, HasDefault
+    System.UriComponents HttpRequestUrl = 61 : Public, Static, Literal, HasDefault
+    System.UriComponents PathAndQuery = 48 : Public, Static, Literal, HasDefault
+Struct System.UriFormat: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.UriFormat UriEscaped = 1 : Public, Static, Literal, HasDefault
+    System.UriFormat Unescaped = 2 : Public, Static, Literal, HasDefault
+    System.UriFormat SafeUnescaped = 3 : Public, Static, Literal, HasDefault
+Struct System.UriIdnScope: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.UriIdnScope None = 0 : Public, Static, Literal, HasDefault
+    System.UriIdnScope AllExceptIntranet = 1 : Public, Static, Literal, HasDefault
+    System.UriIdnScope All = 2 : Public, Static, Literal, HasDefault
+Class System.UriHelper: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 MaxUriBufferSize = 65520 : Assembly, Static, Literal, HasDefault
+    Char DummyChar = ￿ : Assembly, Static, Literal, HasDefault
+    Char Eol = ￾ : Assembly, Static, Literal, HasDefault
+  Methods:
+    TestForSubPath(Char*, UInt16, Char*, UInt16, Boolean): PrivateScope, Assembly, Static, HideBySig
+    EscapeString(String, Int32, Int32, Char[], Int32&, Boolean, Char, Char, Char): PrivateScope, Assembly, Static, HideBySig
+    EnsureDestinationSize(Char*, Char[], Int32, Int16, Int16, Int32&, Int32): PrivateScope, Assembly, Static, HideBySig
+    UnescapeString(String, Int32, Int32, Char[], Int32&, Char, Char, Char, UnescapeMode, UriParser, Boolean, Boolean): PrivateScope, Assembly, Static, HideBySig
+    UnescapeString(Char*, Int32, Int32, Char[], Int32&, Char, Char, Char, UnescapeMode, UriParser, Boolean, Boolean): PrivateScope, Assembly, Static, HideBySig
+    MatchUTF8Sequence(Char*, Char[], Int32&, Char[], Int32, Byte[], Boolean, Boolean): PrivateScope, Assembly, Static, HideBySig
+    IsHighSurrogate(Char): PrivateScope, Assembly, Static, HideBySig
+    EscapeAsciiChar(Char, Char[], Int32&): PrivateScope, Assembly, Static, HideBySig
+    EscapedAscii(Char, Char): PrivateScope, Assembly, Static, HideBySig
+    IsNotSafeForUnescape(Char): PrivateScope, Assembly, Static, HideBySig
+Struct System.UriHelper+UnescapeMode: AutoLayout, AnsiClass, Class, NestedAssembly, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    UnescapeMode CopyOnly = 0 : Public, Static, Literal, HasDefault
+    UnescapeMode Escape = 1 : Public, Static, Literal, HasDefault
+    UnescapeMode Unescape = 2 : Public, Static, Literal, HasDefault
+    UnescapeMode EscapeUnescape = 3 : Public, Static, Literal, HasDefault
+    UnescapeMode V1ToStringFlag = 4 : Public, Static, Literal, HasDefault
+    UnescapeMode UnescapeAll = 8 : Public, Static, Literal, HasDefault
+    UnescapeMode UnescapeAllOrThrow = 24 : Public, Static, Literal, HasDefault
+Class System.UriExceptionHelper: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetException(ParsingError): PrivateScope, Assembly, Static, HideBySig
+Struct System.UriExceptionHelper+ParsingError: AutoLayout, AnsiClass, Class, NestedAssembly, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ParsingError None = 0 : Public, Static, Literal, HasDefault
+    ParsingError BadFormat = 1 : Public, Static, Literal, HasDefault
+    ParsingError BadScheme = 2 : Public, Static, Literal, HasDefault
+    ParsingError BadAuthority = 3 : Public, Static, Literal, HasDefault
+    ParsingError EmptyUriString = 4 : Public, Static, Literal, HasDefault
+    ParsingError LastRelativeUriOkErrIndex = 4 : Public, Static, Literal, HasDefault
+    ParsingError SchemeLimit = 5 : Public, Static, Literal, HasDefault
+    ParsingError SizeLimit = 6 : Public, Static, Literal, HasDefault
+    ParsingError MustRootedPath = 7 : Public, Static, Literal, HasDefault
+    ParsingError BadHostName = 8 : Public, Static, Literal, HasDefault
+    ParsingError NonEmptyHost = 9 : Public, Static, Literal, HasDefault
+    ParsingError BadPort = 10 : Public, Static, Literal, HasDefault
+    ParsingError BadAuthorityTerminator = 11 : Public, Static, Literal, HasDefault
+    ParsingError CannotCreateRelative = 12 : Public, Static, Literal, HasDefault
+Struct System.UnescapeMode: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.UnescapeMode CopyOnly = 0 : Public, Static, Literal, HasDefault
+    System.UnescapeMode Escape = 1 : Public, Static, Literal, HasDefault
+    System.UnescapeMode Unescape = 2 : Public, Static, Literal, HasDefault
+    System.UnescapeMode EscapeUnescape = 3 : Public, Static, Literal, HasDefault
+    System.UnescapeMode V1ToStringFlag = 4 : Public, Static, Literal, HasDefault
+    System.UnescapeMode UnescapeAll = 8 : Public, Static, Literal, HasDefault
+    System.UnescapeMode UnescapeAllOrThrow = 24 : Public, Static, Literal, HasDefault
+Struct System.ParsingError: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.ParsingError None = 0 : Public, Static, Literal, HasDefault
+    System.ParsingError BadFormat = 1 : Public, Static, Literal, HasDefault
+    System.ParsingError BadScheme = 2 : Public, Static, Literal, HasDefault
+    System.ParsingError BadAuthority = 3 : Public, Static, Literal, HasDefault
+    System.ParsingError EmptyUriString = 4 : Public, Static, Literal, HasDefault
+    System.ParsingError LastRelativeUriOkErrIndex = 4 : Public, Static, Literal, HasDefault
+    System.ParsingError SchemeLimit = 5 : Public, Static, Literal, HasDefault
+    System.ParsingError SizeLimit = 6 : Public, Static, Literal, HasDefault
+    System.ParsingError MustRootedPath = 7 : Public, Static, Literal, HasDefault
+    System.ParsingError LastFatalErrIndex = 7 : Public, Static, Literal, HasDefault
+    System.ParsingError BadHostName = 8 : Public, Static, Literal, HasDefault
+    System.ParsingError NonEmptyHost = 9 : Public, Static, Literal, HasDefault
+    System.ParsingError BadPort = 10 : Public, Static, Literal, HasDefault
+    System.ParsingError BadAuthorityTerminator = 11 : Public, Static, Literal, HasDefault
+    System.ParsingError CannotCreateRelative = 12 : Public, Static, Literal, HasDefault
+Struct System.GenericUriParserOptions: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.GenericUriParserOptions Default = 0 : Public, Static, Literal, HasDefault
+    System.GenericUriParserOptions GenericAuthority = 1 : Public, Static, Literal, HasDefault
+    System.GenericUriParserOptions AllowEmptyAuthority = 2 : Public, Static, Literal, HasDefault
+    System.GenericUriParserOptions NoUserInfo = 4 : Public, Static, Literal, HasDefault
+    System.GenericUriParserOptions NoPort = 8 : Public, Static, Literal, HasDefault
+    System.GenericUriParserOptions NoQuery = 16 : Public, Static, Literal, HasDefault
+    System.GenericUriParserOptions NoFragment = 32 : Public, Static, Literal, HasDefault
+    System.GenericUriParserOptions DontConvertPathBackslashes = 64 : Public, Static, Literal, HasDefault
+    System.GenericUriParserOptions DontCompressPath = 128 : Public, Static, Literal, HasDefault
+    System.GenericUriParserOptions DontUnescapePathDotsAndSlashes = 256 : Public, Static, Literal, HasDefault
+    System.GenericUriParserOptions Idn = 512 : Public, Static, Literal, HasDefault
+    System.GenericUriParserOptions IriParsing = 1024 : Public, Static, Literal, HasDefault
+Class System.GenericUriParser: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.UriParser
+    Void .ctor(System.GenericUriParserOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.HttpStyleUriParser: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.UriParser
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.FtpStyleUriParser: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.UriParser
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.FileStyleUriParser: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.UriParser
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.ComponentModel.TypeConverter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CanConvertFrom(Type): PrivateScope, Public, HideBySig
+    CanConvertFrom(ITypeDescriptorContext, Type): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CanConvertTo(Type): PrivateScope, Public, HideBySig
+    CanConvertTo(ITypeDescriptorContext, Type): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ConvertFrom(Object): PrivateScope, Public, HideBySig
+    ConvertFrom(ITypeDescriptorContext, CultureInfo, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ConvertFromString(String): PrivateScope, Public, HideBySig
+    ConvertTo(ITypeDescriptorContext, CultureInfo, Object, Type): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ConvertTo(Object, Type): PrivateScope, Public, HideBySig
+    ConvertToString(Object): PrivateScope, Public, HideBySig
+Class System.UriTypeConverter: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.TypeConverter
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CanConvertFrom(ITypeDescriptorContext, Type): PrivateScope, Public, Virtual, HideBySig
+    CanConvertTo(ITypeDescriptorContext, Type): PrivateScope, Public, Virtual, HideBySig
+    ConvertFrom(ITypeDescriptorContext, CultureInfo, Object): PrivateScope, Public, Virtual, HideBySig
+    ConvertTo(ITypeDescriptorContext, CultureInfo, Object, Type): PrivateScope, Public, Virtual, HideBySig
+Struct System.ComponentModel.BindingDirection: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.ComponentModel.BindingDirection OneWay = 0 : Public, Static, Literal, HasDefault
+    System.ComponentModel.BindingDirection TwoWay = 1 : Public, Static, Literal, HasDefault
+Class System.ComponentModel.CancelEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean Cancel 'get set' : 
+  Methods:
+    get_Cancel(): PrivateScope, Public, HideBySig, SpecialName
+    set_Cancel(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.ComponentCollection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+Interface System.ComponentModel.IChangeTracking: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    Boolean IsChanged 'get ' : 
+  Methods:
+    get_IsChanged(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    AcceptChanges(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface System.ComponentModel.IComponent: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    System.IDisposable
+  Properties:
+    System.ComponentModel.ISite Site 'get set' : 
+  Events:
+    System.EventHandler Disposed: 
+  Methods:
+    get_Site(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Site(ISite): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    add_Disposed(EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    remove_Disposed(EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface System.ComponentModel.IDataErrorInfo: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    System.String Item [System.String] 'get ' : 
+    System.String Error 'get ' : 
+  Methods:
+    get_Item(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Error(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface System.ComponentModel.IEditableObject: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    BeginEdit(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    EndEdit(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CancelEdit(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface System.ComponentModel.INotifyPropertyChanged: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Events:
+    System.ComponentModel.PropertyChangedEventHandler PropertyChanged: 
+  Methods:
+    add_PropertyChanged(PropertyChangedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    remove_PropertyChanged(PropertyChangedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface System.ComponentModel.IRevertibleChangeTracking: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    System.ComponentModel.IChangeTracking
+  Methods:
+    RejectChanges(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface System.ComponentModel.ITypeDescriptorContext: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    System.IServiceProvider
+  Properties:
+    System.ComponentModel.IContainer Container 'get ' : 
+    System.Object Instance 'get ' : 
+    System.ComponentModel.PropertyDescriptor PropertyDescriptor 'get ' : 
+  Methods:
+    get_Container(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Instance(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PropertyDescriptor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    OnComponentChanging(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnComponentChanged(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class System.ComponentModel.PropertyChangedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String PropertyName 'get ' : 
+  Methods:
+    get_PropertyName(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.PropertyChangedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, PropertyChangedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, PropertyChangedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class System.ComponentModel.ProgressChangedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(Int32, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 ProgressPercentage 'get ' : 
+    System.Object UserState 'get ' : 
+  Methods:
+    get_ProgressPercentage(): PrivateScope, Public, HideBySig, SpecialName
+    get_UserState(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.ProgressChangedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, ProgressChangedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, ProgressChangedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class System.ComponentModel.PropertyDescriptor: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+Class System.ComponentModel.ReadOnlyAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean IsReadOnly 'get ' : 
+  Methods:
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    get_IsReadOnly(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.AsyncCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(System.Exception, Boolean, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean Cancelled 'get ' : 
+    System.Exception Error 'get ' : 
+    System.Object UserState 'get ' : 
+  Methods:
+    get_Cancelled(): PrivateScope, Public, HideBySig, SpecialName
+    get_Error(): PrivateScope, Public, HideBySig, SpecialName
+    get_UserState(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.AsyncCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, AsyncCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, AsyncCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class System.ComponentModel.AsyncOperation: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Properties:
+    System.Threading.SynchronizationContext SynchronizationContext 'get ' : 
+    System.Object UserSuppliedState 'get ' : 
+  Methods:
+    CreateOperation(Object, SynchronizationContext): PrivateScope, Assembly, Static, HideBySig
+    OperationCompleted(): PrivateScope, Public, HideBySig
+    Post(SendOrPostCallback, Object): PrivateScope, Public, HideBySig
+    PostOperationCompleted(SendOrPostCallback, Object): PrivateScope, Public, HideBySig
+    get_SynchronizationContext(): PrivateScope, Public, HideBySig, SpecialName
+    get_UserSuppliedState(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.AsyncOperationManager: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Properties:
+    System.Threading.SynchronizationContext SynchronizationContext 'get set' : 
+  Methods:
+    CreateOperation(Object): PrivateScope, Public, Static, HideBySig
+    get_SynchronizationContext(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_SynchronizationContext(SynchronizationContext): PrivateScope, Public, Static, HideBySig, SpecialName
+Class System.ComponentModel.TypeConverterAttribute: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String ConverterTypeName 'get ' : 
+  Methods:
+    get_ConverterTypeName(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.DoWorkEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, DoWorkEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, DoWorkEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class System.ComponentModel.DoWorkEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Object Argument 'get ' : 
+    System.Object Result 'get set' : 
+    Boolean Cancel 'get set' : 
+  Methods:
+    get_Argument(): PrivateScope, Public, HideBySig, SpecialName
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+    set_Result(Object): PrivateScope, Public, HideBySig, SpecialName
+    get_Cancel(): PrivateScope, Public, HideBySig, SpecialName
+    set_Cancel(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.RunWorkerCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, RunWorkerCompletedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, RunWorkerCompletedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class System.ComponentModel.RunWorkerCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+    Void .ctor(System.Object, System.Exception, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Object Result 'get ' : 
+  Methods:
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.BackgroundWorker: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean CancellationPending 'get ' : 
+    Boolean IsBusy 'get ' : 
+    Boolean WorkerReportsProgress 'get set' : 
+    Boolean WorkerSupportsCancellation 'get set' : 
+  Events:
+    System.ComponentModel.DoWorkEventHandler DoWork: 
+    System.ComponentModel.ProgressChangedEventHandler ProgressChanged: 
+    System.ComponentModel.RunWorkerCompletedEventHandler RunWorkerCompleted: 
+  Methods:
+    get_CancellationPending(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsBusy(): PrivateScope, Public, HideBySig, SpecialName
+    get_WorkerReportsProgress(): PrivateScope, Public, HideBySig, SpecialName
+    set_WorkerReportsProgress(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_WorkerSupportsCancellation(): PrivateScope, Public, HideBySig, SpecialName
+    set_WorkerSupportsCancellation(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    add_DoWork(DoWorkEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_DoWork(DoWorkEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ProgressChanged(ProgressChangedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ProgressChanged(ProgressChangedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_RunWorkerCompleted(RunWorkerCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_RunWorkerCompleted(RunWorkerCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    CancelAsync(): PrivateScope, Public, HideBySig
+    ReportProgress(Int32): PrivateScope, Public, HideBySig
+    ReportProgress(Int32, Object): PrivateScope, Public, HideBySig
+    RunWorkerAsync(): PrivateScope, Public, HideBySig
+    RunWorkerAsync(Object): PrivateScope, Public, HideBySig
+Struct System.ComponentModel.ListSortDirection: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.ComponentModel.ListSortDirection Ascending = 0 : Public, Static, Literal, HasDefault
+    System.ComponentModel.ListSortDirection Descending = 1 : Public, Static, Literal, HasDefault
+Class FXAssembly: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.String Version = 5.0.5.0 : Assembly, Static, Literal, HasDefault
+Class ThisAssembly: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.String Title = System.dll : Assembly, Static, Literal, HasDefault
+    System.String Description = System.dll : Assembly, Static, Literal, HasDefault
+    System.String DefaultAlias = System.dll : Assembly, Static, Literal, HasDefault
+    System.String Copyright = © Microsoft Corporation.  All rights reserved. : Assembly, Static, Literal, HasDefault
+    System.String Version = 5.0.5.0 : Assembly, Static, Literal, HasDefault
+    System.String InformationalVersion = 5.1.50918.00 : Assembly, Static, Literal, HasDefault
+    System.String DailyBuildNumberStr = 50918 : Assembly, Static, Literal, HasDefault
+    System.String BuildRevisionStr = 00 : Assembly, Static, Literal, HasDefault
+    Int32 DailyBuildNumber = 50918 : Assembly, Static, Literal, HasDefault
+Class AssemblyRef: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.String EcmaPublicKey = b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String EcmaPublicKeyToken = b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String EcmaPublicKeyFull = 00000000000000000400000000000000 : Assembly, Static, Literal, HasDefault
+    System.String SilverlightPublicKey = 31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SilverlightPublicKeyToken = 31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SilverlightPublicKeyFull = 0024000004800000940000000602000000240000525341310004000001000100B5FC90E7027F67871E773A8FDE8938C81DD402BA65B9201D60593E96C492651E889CC13F1415EBB53FAC1131AE0BD333C5EE6021672D9718EA31A8AEBD0DA0072F25D87DBA6FC90FFD598ED4DA35E44C398C454307E8E33B8426143DAEC9F596836F97C8F74750E5975C64E2189F45DEF46B2A2B1247ADC3652BF5C308055DA9 : Assembly, Static, Literal, HasDefault
+    System.String SilverlightPlatformPublicKey = 7cec85d7bea7798e : Assembly, Static, Literal, HasDefault
+    System.String SilverlightPlatformPublicKeyToken = 7cec85d7bea7798e : Assembly, Static, Literal, HasDefault
+    System.String SilverlightPlatformPublicKeyFull = 00240000048000009400000006020000002400005253413100040000010001008D56C76F9E8649383049F383C44BE0EC204181822A6C31CF5EB7EF486944D032188EA1D3920763712CCB12D75FB77E9811149E6148E5D32FBAAB37611C1878DDC19E20EF135D0CB2CFF2BFEC3D115810C3D9069638FE4BE215DBF795861920E5AB6F7DB2E2CEEF136AC23D5DD2BF031700AEC232F6C6B1C785B4305C123B37AB : Assembly, Static, Literal, HasDefault
+    System.String PlatformPublicKey = 7cec85d7bea7798e : Assembly, Static, Literal, HasDefault
+    System.String PlatformPublicKeyToken = 7cec85d7bea7798e : Assembly, Static, Literal, HasDefault
+    System.String PlatformPublicKeyFull = 00240000048000009400000006020000002400005253413100040000010001008D56C76F9E8649383049F383C44BE0EC204181822A6C31CF5EB7EF486944D032188EA1D3920763712CCB12D75FB77E9811149E6148E5D32FBAAB37611C1878DDC19E20EF135D0CB2CFF2BFEC3D115810C3D9069638FE4BE215DBF795861920E5AB6F7DB2E2CEEF136AC23D5DD2BF031700AEC232F6C6B1C785B4305C123B37AB : Assembly, Static, Literal, HasDefault
+    System.String Mscorlib = mscorlib, Version=5.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e : Assembly, Static, Literal, HasDefault
+    System.String SystemData = System.Data, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String SystemDataOracleClient = System.Data.OracleClient, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String System = System, Version=5.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e : Assembly, Static, Literal, HasDefault
+    System.String SystemCore = System.Core, Version=5.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e : Assembly, Static, Literal, HasDefault
+    System.String SystemNumerics = System.Numerics, Version=5.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e : Assembly, Static, Literal, HasDefault
+    System.String SystemRuntimeRemoting = System.Runtime.Remoting, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String SystemWindowsForms = System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String SystemXml = System.Xml, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftPublicKey = b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftPublicKeyToken = b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftPublicKeyFull = 002400000480000094000000060200000024000052534131000400000100010007D1FA57C4AED9F0A32E84AA0FAEFD0DE9E8FD6AEC8F87FB03766C834C99921EB23BE79AD9D5DCC1DD9AD236132102900B723CF980957FC4E177108FC607774F29E8320E92EA05ECE4E821C0A5EFE8F1645C4C0C93C1AB99285D622CAA652C1DFAD63D745D6F2DE5F17E5EAF0FC4963D261C8A12436518206DC093344D5AD293 : Assembly, Static, Literal, HasDefault
+    System.String SharedLibPublicKey = 31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SharedLibPublicKeyToken = 31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SharedLibPublicKeyFull = 0024000004800000940000000602000000240000525341310004000001000100B5FC90E7027F67871E773A8FDE8938C81DD402BA65B9201D60593E96C492651E889CC13F1415EBB53FAC1131AE0BD333C5EE6021672D9718EA31A8AEBD0DA0072F25D87DBA6FC90FFD598ED4DA35E44C398C454307E8E33B8426143DAEC9F596836F97C8F74750E5975C64E2189F45DEF46B2A2B1247ADC3652BF5C308055DA9 : Assembly, Static, Literal, HasDefault
+    System.String SystemComponentModelDataAnnotations = System.ComponentModel.DataAnnotations, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SystemConfiguration = System.Configuration, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemConfigurationInstall = System.Configuration.Install, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemDeployment = System.Deployment, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemDesign = System.Design, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemDirectoryServices = System.DirectoryServices, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemDrawingDesign = System.Drawing.Design, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemDrawing = System.Drawing, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemEnterpriseServices = System.EnterpriseServices, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemManagement = System.Management, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemMessaging = System.Messaging, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemNetHttp = System.Net.Http, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemNetHttpWebRequestChannel = System.Net.Http.WebRequestChannel, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemRuntimeSerializationFormattersSoap = System.Runtime.Serialization.Formatters.Soap, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemSecurity = System.Security, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemServiceModelWeb = System.ServiceModel.Web, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SystemServiceProcess = System.ServiceProcess, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemWeb = System.Web, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemWebAbstractions = System.Web.Abstractions, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SystemWebDynamicData = System.Web.DynamicData, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SystemWebDynamicDataDesign = System.Web.DynamicData.Design, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SystemWebEntityDesign = System.Web.Entity.Design, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String SystemWebExtensions = System.Web.Extensions, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SystemWebExtensionsDesign = System.Web.Extensions.Design, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SystemWebMobile = System.Web.Mobile, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemWebRegularExpressions = System.Web.RegularExpressions, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemWebRouting = System.Web.Routing, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SystemWebServices = System.Web.Services, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String WindowsBase = WindowsBase, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftVisualStudio = Microsoft.VisualStudio, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftVisualStudioWindowsForms = Microsoft.VisualStudio.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String VJSharpCodeProvider = VJSharpCodeProvider, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String ASPBrowserCapsPublicKey = b7bd7678b977bd8f : Assembly, Static, Literal, HasDefault
+    System.String ASPBrowserCapsFactory = ASP.BrowserCapsFactory, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b7bd7678b977bd8f : Assembly, Static, Literal, HasDefault
+    System.String EnvDTE = EnvDTE, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftVisualStudioConfiguration = Microsoft.VisualStudio.Configuration, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftVisualStudioDesign = Microsoft.VisualStudio.Design, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftVisualCCppCodeProvider = CppCodeProvider, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftVisualBasic = Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftVSDesigner = Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftVisualStudioWeb = Microsoft.VisualStudio.Web, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftWebDesign = Microsoft.Web.Design.Client, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftVSDesignerMobile = Microsoft.VSDesigner.Mobile, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftJScript = Microsoft.JScript, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+Class System.SRDescriptionAttribute: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  :System.ComponentModel.DescriptionAttribute
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Description 'get ' : 
+  Methods:
+    get_Description(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class System.SRCategoryAttribute: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  :System.ComponentModel.CategoryAttribute
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.SR: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String RTL = RTL : Assembly, Static, Literal, HasDefault
+    System.String ContinueButtonText = ContinueButtonText : Assembly, Static, Literal, HasDefault
+    System.String DebugAssertBanner = DebugAssertBanner : Assembly, Static, Literal, HasDefault
+    System.String DebugAssertShortMessage = DebugAssertShortMessage : Assembly, Static, Literal, HasDefault
+    System.String DebugAssertLongMessage = DebugAssertLongMessage : Assembly, Static, Literal, HasDefault
+    System.String DebugMessageTruncated = DebugMessageTruncated : Assembly, Static, Literal, HasDefault
+    System.String DebugAssertTitleShort = DebugAssertTitleShort : Assembly, Static, Literal, HasDefault
+    System.String DebugAssertTitle = DebugAssertTitle : Assembly, Static, Literal, HasDefault
+    System.String ArgumentNull_Key = ArgumentNull_Key : Assembly, Static, Literal, HasDefault
+    System.String Argument_AddingDuplicate = Argument_AddingDuplicate : Assembly, Static, Literal, HasDefault
+    System.String Argument_InvalidValue = Argument_InvalidValue : Assembly, Static, Literal, HasDefault
+    System.String ArgumentOutOfRange_NeedNonNegNum = ArgumentOutOfRange_NeedNonNegNum : Assembly, Static, Literal, HasDefault
+    System.String ArgumentOutOfRange_InvalidThreshold = ArgumentOutOfRange_InvalidThreshold : Assembly, Static, Literal, HasDefault
+    System.String InvalidOperation_EnumFailedVersion = InvalidOperation_EnumFailedVersion : Assembly, Static, Literal, HasDefault
+    System.String InvalidOperation_EnumOpCantHappen = InvalidOperation_EnumOpCantHappen : Assembly, Static, Literal, HasDefault
+    System.String Arg_MultiRank = Arg_MultiRank : Assembly, Static, Literal, HasDefault
+    System.String Arg_NonZeroLowerBound = Arg_NonZeroLowerBound : Assembly, Static, Literal, HasDefault
+    System.String Arg_InsufficientSpace = Arg_InsufficientSpace : Assembly, Static, Literal, HasDefault
+    System.String NotSupported_EnumeratorReset = NotSupported_EnumeratorReset : Assembly, Static, Literal, HasDefault
+    System.String Invalid_Array_Type = Invalid_Array_Type : Assembly, Static, Literal, HasDefault
+    System.String Serialization_InvalidOnDeser = Serialization_InvalidOnDeser : Assembly, Static, Literal, HasDefault
+    System.String Serialization_MissingValues = Serialization_MissingValues : Assembly, Static, Literal, HasDefault
+    System.String Serialization_MismatchedCount = Serialization_MismatchedCount : Assembly, Static, Literal, HasDefault
+    System.String ExternalLinkedListNode = ExternalLinkedListNode : Assembly, Static, Literal, HasDefault
+    System.String LinkedListNodeIsAttached = LinkedListNodeIsAttached : Assembly, Static, Literal, HasDefault
+    System.String LinkedListEmpty = LinkedListEmpty : Assembly, Static, Literal, HasDefault
+    System.String Arg_WrongType = Arg_WrongType : Assembly, Static, Literal, HasDefault
+    System.String Argument_ItemNotExist = Argument_ItemNotExist : Assembly, Static, Literal, HasDefault
+    System.String Argument_ImplementIComparable = Argument_ImplementIComparable : Assembly, Static, Literal, HasDefault
+    System.String InvalidOperation_EmptyCollection = InvalidOperation_EmptyCollection : Assembly, Static, Literal, HasDefault
+    System.String InvalidOperation_EmptyQueue = InvalidOperation_EmptyQueue : Assembly, Static, Literal, HasDefault
+    System.String InvalidOperation_EmptyStack = InvalidOperation_EmptyStack : Assembly, Static, Literal, HasDefault
+    System.String InvalidOperation_CannotRemoveFromStackOrQueue = InvalidOperation_CannotRemoveFromStackOrQueue : Assembly, Static, Literal, HasDefault
+    System.String ArgumentOutOfRange_Index = ArgumentOutOfRange_Index : Assembly, Static, Literal, HasDefault
+    System.String ArgumentOutOfRange_SmallCapacity = ArgumentOutOfRange_SmallCapacity : Assembly, Static, Literal, HasDefault
+    System.String Arg_ArrayPlusOffTooSmall = Arg_ArrayPlusOffTooSmall : Assembly, Static, Literal, HasDefault
+    System.String NotSupported_KeyCollectionSet = NotSupported_KeyCollectionSet : Assembly, Static, Literal, HasDefault
+    System.String NotSupported_ValueCollectionSet = NotSupported_ValueCollectionSet : Assembly, Static, Literal, HasDefault
+    System.String NotSupported_ReadOnlyCollection = NotSupported_ReadOnlyCollection : Assembly, Static, Literal, HasDefault
+    System.String NotSupported_SortedListNestedWrite = NotSupported_SortedListNestedWrite : Assembly, Static, Literal, HasDefault
+    System.String UriTypeConverter_ConvertFrom_CannotConvert = UriTypeConverter_ConvertFrom_CannotConvert : Assembly, Static, Literal, HasDefault
+    System.String UriTypeConverter_ConvertTo_CannotConvert = UriTypeConverter_ConvertTo_CannotConvert : Assembly, Static, Literal, HasDefault
+    System.String ISupportInitializeDescr = ISupportInitializeDescr : Assembly, Static, Literal, HasDefault
+    System.String InvalidLowBoundArgument = InvalidLowBoundArgument : Assembly, Static, Literal, HasDefault
+    System.String DuplicateComponentName = DuplicateComponentName : Assembly, Static, Literal, HasDefault
+    System.String NotImplemented = NotImplemented : Assembly, Static, Literal, HasDefault
+    System.String OutOfMemory = OutOfMemory : Assembly, Static, Literal, HasDefault
+    System.String EOF = EOF : Assembly, Static, Literal, HasDefault
+    System.String IOError = IOError : Assembly, Static, Literal, HasDefault
+    System.String BadChar = BadChar : Assembly, Static, Literal, HasDefault
+    System.String toStringNone = toStringNone : Assembly, Static, Literal, HasDefault
+    System.String toStringUnknown = toStringUnknown : Assembly, Static, Literal, HasDefault
+    System.String InvalidEnum = InvalidEnum : Assembly, Static, Literal, HasDefault
+    System.String IndexOutOfRange = IndexOutOfRange : Assembly, Static, Literal, HasDefault
+    System.String ErrorPropertyAccessorException = ErrorPropertyAccessorException : Assembly, Static, Literal, HasDefault
+    System.String InvalidOperation = InvalidOperation : Assembly, Static, Literal, HasDefault
+    System.String EmptyStack = EmptyStack : Assembly, Static, Literal, HasDefault
+    System.String ArgumentNull_ArrayWithNullElements = ArgumentNull_ArrayWithNullElements : Assembly, Static, Literal, HasDefault
+    System.String OnlyAllowedOnce = OnlyAllowedOnce : Assembly, Static, Literal, HasDefault
+    System.String BeginIndexNotNegative = BeginIndexNotNegative : Assembly, Static, Literal, HasDefault
+    System.String LengthNotNegative = LengthNotNegative : Assembly, Static, Literal, HasDefault
+    System.String UnimplementedState = UnimplementedState : Assembly, Static, Literal, HasDefault
+    System.String UnexpectedOpcode = UnexpectedOpcode : Assembly, Static, Literal, HasDefault
+    System.String NoResultOnFailed = NoResultOnFailed : Assembly, Static, Literal, HasDefault
+    System.String UnterminatedBracket = UnterminatedBracket : Assembly, Static, Literal, HasDefault
+    System.String TooManyParens = TooManyParens : Assembly, Static, Literal, HasDefault
+    System.String NestedQuantify = NestedQuantify : Assembly, Static, Literal, HasDefault
+    System.String QuantifyAfterNothing = QuantifyAfterNothing : Assembly, Static, Literal, HasDefault
+    System.String InternalError = InternalError : Assembly, Static, Literal, HasDefault
+    System.String IllegalRange = IllegalRange : Assembly, Static, Literal, HasDefault
+    System.String NotEnoughParens = NotEnoughParens : Assembly, Static, Literal, HasDefault
+    System.String BadClassInCharRange = BadClassInCharRange : Assembly, Static, Literal, HasDefault
+    System.String ReversedCharRange = ReversedCharRange : Assembly, Static, Literal, HasDefault
+    System.String UndefinedReference = UndefinedReference : Assembly, Static, Literal, HasDefault
+    System.String MalformedReference = MalformedReference : Assembly, Static, Literal, HasDefault
+    System.String UnrecognizedGrouping = UnrecognizedGrouping : Assembly, Static, Literal, HasDefault
+    System.String UnterminatedComment = UnterminatedComment : Assembly, Static, Literal, HasDefault
+    System.String IllegalEndEscape = IllegalEndEscape : Assembly, Static, Literal, HasDefault
+    System.String MalformedNameRef = MalformedNameRef : Assembly, Static, Literal, HasDefault
+    System.String UndefinedBackref = UndefinedBackref : Assembly, Static, Literal, HasDefault
+    System.String UndefinedNameRef = UndefinedNameRef : Assembly, Static, Literal, HasDefault
+    System.String TooFewHex = TooFewHex : Assembly, Static, Literal, HasDefault
+    System.String MissingControl = MissingControl : Assembly, Static, Literal, HasDefault
+    System.String UnrecognizedControl = UnrecognizedControl : Assembly, Static, Literal, HasDefault
+    System.String UnrecognizedEscape = UnrecognizedEscape : Assembly, Static, Literal, HasDefault
+    System.String IllegalCondition = IllegalCondition : Assembly, Static, Literal, HasDefault
+    System.String TooManyAlternates = TooManyAlternates : Assembly, Static, Literal, HasDefault
+    System.String MakeException = MakeException : Assembly, Static, Literal, HasDefault
+    System.String IncompleteSlashP = IncompleteSlashP : Assembly, Static, Literal, HasDefault
+    System.String MalformedSlashP = MalformedSlashP : Assembly, Static, Literal, HasDefault
+    System.String InvalidGroupName = InvalidGroupName : Assembly, Static, Literal, HasDefault
+    System.String CapnumNotZero = CapnumNotZero : Assembly, Static, Literal, HasDefault
+    System.String AlternationCantCapture = AlternationCantCapture : Assembly, Static, Literal, HasDefault
+    System.String AlternationCantHaveComment = AlternationCantHaveComment : Assembly, Static, Literal, HasDefault
+    System.String CaptureGroupOutOfRange = CaptureGroupOutOfRange : Assembly, Static, Literal, HasDefault
+    System.String SubtractionMustBeLast = SubtractionMustBeLast : Assembly, Static, Literal, HasDefault
+    System.String UnknownProperty = UnknownProperty : Assembly, Static, Literal, HasDefault
+    System.String ReplacementError = ReplacementError : Assembly, Static, Literal, HasDefault
+    System.String CountTooSmall = CountTooSmall : Assembly, Static, Literal, HasDefault
+    System.String EnumNotStarted = EnumNotStarted : Assembly, Static, Literal, HasDefault
+    System.String Arg_InvalidArrayType = Arg_InvalidArrayType : Assembly, Static, Literal, HasDefault
+    System.String Arg_RankMultiDimNotSupported = Arg_RankMultiDimNotSupported : Assembly, Static, Literal, HasDefault
+    System.String RegexMatchTimeoutException_Occurred = RegexMatchTimeoutException_Occurred : Assembly, Static, Literal, HasDefault
+    System.String IllegalDefaultRegexMatchTimeoutInAppDomain = IllegalDefaultRegexMatchTimeoutInAppDomain : Assembly, Static, Literal, HasDefault
+    System.String InvalidOperation_EnumNotStarted = InvalidOperation_EnumNotStarted : Assembly, Static, Literal, HasDefault
+    System.String net_uri_BadScheme = net_uri_BadScheme : Assembly, Static, Literal, HasDefault
+    System.String net_uri_BadFormat = net_uri_BadFormat : Assembly, Static, Literal, HasDefault
+    System.String net_uri_BadUserPassword = net_uri_BadUserPassword : Assembly, Static, Literal, HasDefault
+    System.String net_uri_BadHostName = net_uri_BadHostName : Assembly, Static, Literal, HasDefault
+    System.String net_uri_BadAuthority = net_uri_BadAuthority : Assembly, Static, Literal, HasDefault
+    System.String net_uri_BadAuthorityTerminator = net_uri_BadAuthorityTerminator : Assembly, Static, Literal, HasDefault
+    System.String net_uri_EmptyUri = net_uri_EmptyUri : Assembly, Static, Literal, HasDefault
+    System.String net_uri_BadString = net_uri_BadString : Assembly, Static, Literal, HasDefault
+    System.String net_uri_MustRootedPath = net_uri_MustRootedPath : Assembly, Static, Literal, HasDefault
+    System.String net_uri_BadPort = net_uri_BadPort : Assembly, Static, Literal, HasDefault
+    System.String net_uri_SizeLimit = net_uri_SizeLimit : Assembly, Static, Literal, HasDefault
+    System.String net_uri_SchemeLimit = net_uri_SchemeLimit : Assembly, Static, Literal, HasDefault
+    System.String net_uri_NotAbsolute = net_uri_NotAbsolute : Assembly, Static, Literal, HasDefault
+    System.String net_uri_PortOutOfRange = net_uri_PortOutOfRange : Assembly, Static, Literal, HasDefault
+    System.String net_uri_UserDrivenParsing = net_uri_UserDrivenParsing : Assembly, Static, Literal, HasDefault
+    System.String net_uri_AlreadyRegistered = net_uri_AlreadyRegistered : Assembly, Static, Literal, HasDefault
+    System.String net_uri_NeedFreshParser = net_uri_NeedFreshParser : Assembly, Static, Literal, HasDefault
+    System.String net_uri_CannotCreateRelative = net_uri_CannotCreateRelative : Assembly, Static, Literal, HasDefault
+    System.String net_uri_InvalidUriKind = net_uri_InvalidUriKind : Assembly, Static, Literal, HasDefault
+    System.String net_uri_BadUnicodeHostForIdn = net_uri_BadUnicodeHostForIdn : Assembly, Static, Literal, HasDefault
+    System.String net_uri_GenericAuthorityNotDnsSafe = net_uri_GenericAuthorityNotDnsSafe : Assembly, Static, Literal, HasDefault
+    System.String net_uri_NotJustSerialization = net_uri_NotJustSerialization : Assembly, Static, Literal, HasDefault
+    System.String Argument_InvalidOffLen = Argument_InvalidOffLen : Assembly, Static, Literal, HasDefault
+    System.String ArgumentOutOfRange_NeedNonNegNumRequired = ArgumentOutOfRange_NeedNonNegNumRequired : Assembly, Static, Literal, HasDefault
+    System.String InvalidOperation_EnumEnded = InvalidOperation_EnumEnded : Assembly, Static, Literal, HasDefault
+    System.String Async_ExceptionOccurred = Async_ExceptionOccurred : Assembly, Static, Literal, HasDefault
+    System.String Async_OperationCancelled = Async_OperationCancelled : Assembly, Static, Literal, HasDefault
+    System.String Async_OperationAlreadyCompleted = Async_OperationAlreadyCompleted : Assembly, Static, Literal, HasDefault
+    System.String Async_NullDelegate = Async_NullDelegate : Assembly, Static, Literal, HasDefault
+    System.String BackgroundWorker_AlreadyRunning = BackgroundWorker_AlreadyRunning : Assembly, Static, Literal, HasDefault
+    System.String BackgroundWorker_CancellationNotSupported = BackgroundWorker_CancellationNotSupported : Assembly, Static, Literal, HasDefault
+    System.String BackgroundWorker_OperationCompleted = BackgroundWorker_OperationCompleted : Assembly, Static, Literal, HasDefault
+    System.String BackgroundWorker_ProgressNotSupported = BackgroundWorker_ProgressNotSupported : Assembly, Static, Literal, HasDefault
+  Methods:
+    GetString(String, Object[]): PrivateScope, Public, Static, HideBySig
+    GetString(String, Boolean&(Out), Object[]): PrivateScope, Public, Static, HideBySig
+    GetString(String): PrivateScope, Public, Static, HideBySig
+    GetString(String, Boolean&(Out)): PrivateScope, Public, Static, HideBySig
+    GetObject(String): PrivateScope, Public, Static, HideBySig

@@ -1,0 +1,2 @@
+C:\semester_10\HPC\project_versions\Parallel-Background-Subtraction-main\HPC_ProjectTemplate\x64\Debug\HPC_ProjectTemplate.vcxproj.AssemblyReference.cache
+C:\semester_10\HPC\project_versions\Parallel-Background-Subtraction-main\HPC_ProjectTemplate\x64\Debug\HPC_Proj.15B24AF5.Up2Date
